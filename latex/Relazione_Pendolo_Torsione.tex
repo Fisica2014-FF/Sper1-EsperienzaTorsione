@@ -1,0 +1,77 @@
+\documentclass[10pt,a4paper]{article} % Prepara un documento con un font grande
+
+\input{./preamboli_e_stili/pacchetti.tex}
+
+\DeclareGraphicsExtensions{.pdf, .png, .jpg} % Se due immagini hanno lo stesso nome sceglile secondo l'ordine di filetype qui
+\graphicspath{ {./img/} }					 % Path delle immagini 
+
+\input{./preamboli_e_stili/titolo_Pendolo_Torsione.tex}
+\input{./preamboli_e_stili/stili_float.tex}
+
+
+%////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+%////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+% Fine dei dati iniziali per il latex: il documento finale inizierà da qui
+\begin{document}
+
+\maketitle % Produce il titolo a partire dai comandi \title, \author e \date
+
+\vspace{ \stretch{1} }
+\begin{center}
+\fontsize{66pt}{10pt}\selectfont
+\[
+ pV=nRT
+\]
+\end{center}
+
+\vspace{ \stretch{1} }
+% Le varie sezioni
+%\section{Obiettivi}
+\begin{abstract}
+	\noindent
+	\input{./sezioni/obiettivi.tex}
+\end{abstract}
+
+\newpage
+
+\tableofcontents % Prepara l'indice generale
+
+%\begin{multicols}{2}
+
+\section{Apparato strumentale}
+	\input{./sezioni/descrizione_app_strumentale.tex}
+
+\section{Metodologia di misura}
+	\input{./sezioni/metodologia_misura.tex}
+
+\newpage
+\section{Presentazione dei dati}			
+	\subsection{Tabelle}
+	%\begin{multicols}{2}
+	\input{./sezioni/pres_dati_tabelle.tex}
+	%\end{multicols}
+	\clearpage
+	\subsection{Grafici}
+	\input{./sezioni/pres_dati_grafici.tex}
+	
+\clearpage
+\section{Analisi dei dati}
+	\input{./sezioni/analisi.tex}
+
+\section{Conclusioni}
+	\input{./sezioni/conclusioni.tex}
+	
+\section{Codice}
+	\input{./sezioni/codice.tex}
+	
+%\subsection{Esempio immagini}
+%\begin{figure}[p]
+% \centering
+% \includegraphics[width=0.8\textwidth]{spazio1}
+% \caption{Spazio!}
+% \label{fig:spazio1}
+%\end{figure}
+
+%\end{multicols}
+
+\end{document}
