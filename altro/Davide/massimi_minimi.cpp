@@ -85,7 +85,7 @@ int main()
 	for (int i = 0 ; i < max_size ; i++)
 	{
 		delta = (	( max_dist.at(i)     * max_dist_pos.at(i) * max_dist_pos.at(i) ) +
-					( max_dist_neg.at(i) * max_dist.at(i)     * max_dist.at(i) )    +
+					( max_dist_neg.at(i) * max_dist.at(i)     * max_dist.at(i) )     +
 					( max_dist_neg.at(i) * max_dist_neg.at(i) * max_dist_pos.at(i) ) -
 					( max_dist_neg.at(i) * max_dist_neg.at(i) * max_dist.at(i) )     -
 					( max_dist.at(i)     * max_dist.at(i)     * max_dist_pos.at(i) ) -
@@ -115,14 +115,14 @@ int main()
 			( massimi.at(i) * max_dist_pos.at(i) ) -
 			( max_pos.at(i) * max_dist_neg.at(i) )	  );
 
-
+cout <<"DELTA = " << delta << endl; //da togliere
 		a = da / delta;
 		b = db / delta;
 		c = db / delta;
-		vortex = - b / ( 2 * a );
-		vortey = - ( b * b - 4 * a * c ) / ( 4 * a );
+		vortex = - b / ( 2 * c );
+		vortey = - ( b * b - 4 * a * c ) / ( 4 * c );
 		xverticiMAX.push_back(vortex);
-		yverticiMAX.push_back(vortey);
+		yverticiMAX.push_back(vortey); 
 	}
 
 
@@ -165,11 +165,11 @@ int main()
 
 		a = da / delta;
 		b = db / delta;
-		c = db / delta;
-		vortex = - b / ( 2 * a );
-		vortey = - ( b * b - 4 * a * c ) / ( 4 * a );
-		xverticiMAX.push_back(vortex);
-		yverticiMAX.push_back(vortey);
+		c = db / delta;		
+		vortex = - b / ( 2 * c );
+		vortey = - ( b * b - 4 * a * c ) / ( 4 * c );
+		xverticiMIN.push_back(vortex);
+		yverticiMIN.push_back(vortey);
 	}
 
 	cout << "Le x dei massimi valgono: " << endl;
