@@ -92,7 +92,7 @@ int main()
 					( max_dist_neg.at(i) * max_dist_pos.at(i) * max_dist_pos.at(i) )	);
 
 
-	da = (	( massimi.at(i) * max_dist.at(i)     * max_dist_pos.at(i) * max_dist_pos.at(i) ) +
+	da = (	( max_neg.at(i) * max_dist.at(i)     * max_dist_pos.at(i) * max_dist_pos.at(i) ) +
 			( max_pos.at(i) * max_dist_neg.at(i) * max_dist.at(i)     * max_dist.at(i) )     +
 			( massimi.at(i) * max_dist_neg.at(i) * max_dist_neg.at(i) * max_dist_pos.at(i) ) -
 			( max_pos.at(i) * max_dist_neg.at(i) * max_dist_neg.at(i) * max_dist.at(i) )     -
@@ -118,7 +118,7 @@ int main()
 cout <<"DELTA = " << delta << endl; //da togliere
 		a = da / delta;
 		b = db / delta;
-		c = db / delta;
+		c = dc / delta;
 		vortex = - b / ( 2 * c );
 		vortey = - ( b * b - 4 * a * c ) / ( 4 * c );
 		xverticiMAX.push_back(vortex);
@@ -139,7 +139,7 @@ cout <<"DELTA = " << delta << endl; //da togliere
 					( min_dist_neg.at(i) * min_dist_pos.at(i) * min_dist_pos.at(i) )	);
 
 
-	da = (	( minimi.at(i)  * min_dist.at(i)     * min_dist_pos.at(i) * min_dist_pos.at(i) ) +
+	da = (	( min_neg.at(i)  * min_dist.at(i)     * min_dist_pos.at(i) * min_dist_pos.at(i) ) +
 			( min_pos.at(i) * min_dist_neg.at(i) * min_dist.at(i)     * min_dist.at(i) )     +
 			( minimi.at(i)  * min_dist_neg.at(i) * min_dist_neg.at(i) * min_dist_pos.at(i) ) -
 			( min_pos.at(i) * min_dist_neg.at(i) * min_dist_neg.at(i) * min_dist.at(i) )     -
@@ -165,14 +165,15 @@ cout <<"DELTA = " << delta << endl; //da togliere
 
 		a = da / delta;
 		b = db / delta;
-		c = db / delta;		
+		c = dc / delta;		
 		vortex = - b / ( 2 * c );
 		vortey = - ( b * b - 4 * a * c ) / ( 4 * c );
 		xverticiMIN.push_back(vortex);
 		yverticiMIN.push_back(vortey);
 	}
+	
 
-	cout << "Le x dei massimi valgono: " << endl;
+	/*	cout << "Le x dei massimi valgono: " << endl;
 	for (int i = 0 ; i < max_size ; i++)
 	{
 	cout << xverticiMAX.at(i) << endl;
@@ -202,7 +203,7 @@ cout <<"DELTA = " << delta << endl; //da togliere
 
 
 
-	/* int q = 0;									//Algoritmo per la visualizzazione dei risultati
+	 int q = 0;									//Algoritmo per la visualizzazione dei risultati
 	cout << "Massimi: " << endl;
 	for (double massimi)
 	{
