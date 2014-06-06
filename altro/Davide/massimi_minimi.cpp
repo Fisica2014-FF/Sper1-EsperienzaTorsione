@@ -3,92 +3,236 @@
 #include <vector>
 using namespace std;
 int main()
-{
-	int dimensione = 10; 
-	int i = 0;
-	vector <double> valori(dimensione);
-	while(cin >> valori[i])			//Mette i dati nel vector
+{ 
+	int n = 0;
+	vector <double> valori;
+	double temp;						//Variabile temporanea contenente i valori
+	double temp_neg;					//Variabile temporanea ausiliaria 1
+	double temp_pos;					//Variabile temporanea ausiliaria 2
+	while(cin >> temp)					//Mette i dati nel vector
 	{
-		i++;
-		if (i >= dimensione - 2 )
-		{
-			dimensione = dimensione * 2;
-			valori.resize(dimensione);		//Aumenta la dimensione
-		{
+		valori.push_back(temp);
+		n++;
 	}
-	int dim_min = 10;
-	int dim_max = 10;
 	int j = 0;
-	vector <double> massimi(dim_max);		//Crea vector in cui mettere i massimi
-	vector <int> max_dist(dim_max);			//Crea vector in cui scrivere posizione massimi
-	for (int i = 1 ; i < ( dimensione - 1 ) ; i++)
+	vector <double> massimi;		//Crea vector in cui mettere i massimi
+	vector <double> max_neg;		//Crea vector in cui mettere elemento precedente al massimo
+	vector <double> max_pos;		//Crea vector in cui mettere elemento successivo al massimo
+	vector <int> max_dist;			//Crea vector in cui scrivere posizione massimi
+	vector <int> max_dist_neg;
+	vector <int> max_dist_pos;
+	double temp_dist;				//Crea variabile temporanea per la distanza dei valori
+	double temp_dist_neg;
+	double temp_dist_pos;
+
+	for (int i = 1 ; i < ( n - 1 ) ; i++)
 	{
-		if (valori[i] > valori[i-1] && valori[i] > valori[i+1])	//Trova i massimi
+		if (valori.at(i) > valori.at(i-1) && valori.at(i) > valori.at(i+1) )	//Trova i massimi
 		{
-			massimi[j] = valori[i];
-			max_dist[j] = i + 1;
+			temp = valori.at(i);
+			temp_neg = valori.at(i-1);
+			temp_pos = valori.at(i+1);
+			temp_dist = (i + 1);
+			temp_dist_neg = i ;
+			temp_dist_pos = i + 2;
+			massimi.push_back(temp);
+			max_neg.push_back(temp_neg);
+			max_pos.push_back(temp_pos);
+			max_dist.push_back(temp_dist);
+			max_dist_neg.push_back(temp_dist_neg);
+			max_dist_pos.push_back(temp_dist_pos);
+
 			j++;
-			if (j >= dim_max) 
-			{
-				dim_max = dim_max * 2;
-				massimi.resize(dim_max);
-				max_dist.resize(dim_max);
-			 }
+
 		}
 	}
-	vector <double> minimi(dim_min);
-	vector <int> min_dist(dim_min);
+	vector <double> minimi;
+	vector <double> min_neg;
+	vector <double> min_pos;
+	vector <int> min_dist;
+	vector <int> min_dist_neg;
+	vector <int> min_dist_pos;
 	j = 0;
-	for (int i = 1 ; i < ( dimensione - 1 ) ; i++)
+	for (int i = 1 ; i < ( n - 1 ) ; i++)
 	{
-		if (valori[i] < valori[i-1] && valori[i] < valori[i+1])
+		if (valori.at(i) < valori.at(i-1) && valori.at(i) < valori.at(i+1) )
 		{
-			minimi[j] = valori[i];
-			min_dist[j] = i + 1;
+			temp = valori.at(i);
+			temp_neg = valori.at(i-1);
+			temp_pos = valori.at(i+1);
+			temp_dist = i + 1;
+			temp_dist_neg = i ;
+			temp_dist_pos = i + 2;
+			minimi.push_back(temp);
+			min_neg.push_back(temp_neg);
+			min_pos.push_back(temp_pos);
+			min_dist.push_back(temp_dist);
+			min_dist_neg.push_back(temp_dist_neg);
+			min_dist_pos.push_back(temp_dist_pos);
+
 			j++;
-			if (j >= dim_min)
-			{
-				dim_min = dim_min * 2;
-				minimi.resize(dim_min);
-				min_dist.resize(dim_min);
-			}
 		}
 	}
 
 
+	double delta, da, db, dc, a, b, c, vortex, vortey;		//Parametri della parabola
+	vector <double> xverticiMAX;					//Vector contenente i risultati del programma
+	vector <double> yverticiMAX;
+
+	double max_size = massimi.size();
+	double min_size = minimi.size();
+
+	for (int i = 0 ; i < max_size ; i++)
+	{
+		delta = (	( max_dist.at(i)     * max_dist_pos.at(i) * max_dist_pos.at(i) ) +
+					( max_dist_neg.at(i) * max_dist.at(i)     * max_dist.at(i) )    +
+					( max_dist_neg.at(i) * max_dist_neg.at(i) * max_dist_pos.at(i) ) -
+					( max_dist_neg.at(i) * max_dist_neg.at(i) * max_dist.at(i) )     -
+					( max_dist.at(i)     * max_dist.at(i)     * max_dist_pos.at(i) ) -
+					( max_dist_neg.at(i) * max_dist_pos.at(i) * max_dist_pos.at(i) )	);
 
 
-	i = 0;		//Algoritmo per la visualizzazione dei risultati
+	da = (	( massimi.at(i) * max_dist.at(i)     * max_dist_pos.at(i) * max_dist_pos.at(i) ) +
+			( max_pos.at(i) * max_dist_neg.at(i) * max_dist.at(i)     * max_dist.at(i) )     +
+			( massimi.at(i) * max_dist_neg.at(i) * max_dist_neg.at(i) * max_dist_pos.at(i) ) -
+			( max_pos.at(i) * max_dist_neg.at(i) * max_dist_neg.at(i) * max_dist.at(i) )     -
+			( max_neg.at(i) * max_dist.at(i)     * max_dist.at(i)     * max_dist_pos.at(i) ) - 
+			( massimi.at(i) * max_dist_neg.at(i) * max_dist_pos.at(i) * max_dist_pos.at(i) ) );
+
+
+	db = (	( massimi.at(i) * max_dist_pos.at(i) * max_dist_pos.at(i) ) +
+			( max_neg.at(i) * max_dist.at(i)     * max_dist.at(i) )     +
+			( max_pos.at(i) * max_dist_neg.at(i) * max_dist_neg.at(i) ) -
+			( massimi.at(i) * max_dist_neg.at(i) * max_dist_neg.at(i) ) -
+			( max_pos.at(i) * max_dist.at(i)     * max_dist.at(i) )     -
+			( max_neg.at(i) * max_dist_pos.at(i) * max_dist_pos.at(i) ) 	);
+
+
+	dc = (	( max_pos.at(i) * max_dist.at(i) )     +
+			( massimi.at(i) * max_dist_neg.at(i) ) +
+			( max_neg.at(i) * max_dist_pos.at(i) ) -
+			( max_neg.at(i) * max_dist.at(i) )     -
+			( massimi.at(i) * max_dist_pos.at(i) ) -
+			( max_pos.at(i) * max_dist_neg.at(i) )	  );
+
+
+		a = da / delta;
+		b = db / delta;
+		c = db / delta;
+		vortex = - b / ( 2 * a );
+		vortey = - ( b * b - 4 * a * c ) / ( 4 * a );
+		xverticiMAX.push_back(vortex);
+		yverticiMAX.push_back(vortey);
+	}
+
+
+	vector <double> xverticiMIN;
+	vector <double> yverticiMIN;
+
+	for (int i = 0 ; i < min_size ; i++)
+	{
+		delta = (	( min_dist.at(i)     * min_dist_pos.at(i) * min_dist_pos.at(i) ) +
+					( min_dist_neg.at(i) * min_dist.at(i)     * min_dist.at(i) )    +
+					( min_dist_neg.at(i) * min_dist_neg.at(i) * min_dist_pos.at(i) ) -
+					( min_dist_neg.at(i) * min_dist_neg.at(i) * min_dist.at(i) )    -
+					( min_dist.at(i)     * min_dist.at(i)     * min_dist_pos.at(i) ) -
+					( min_dist_neg.at(i) * min_dist_pos.at(i) * min_dist_pos.at(i) )	);
+
+
+	da = (	( minimi.at(i)  * min_dist.at(i)     * min_dist_pos.at(i) * min_dist_pos.at(i) ) +
+			( min_pos.at(i) * min_dist_neg.at(i) * min_dist.at(i)     * min_dist.at(i) )     +
+			( minimi.at(i)  * min_dist_neg.at(i) * min_dist_neg.at(i) * min_dist_pos.at(i) ) -
+			( min_pos.at(i) * min_dist_neg.at(i) * min_dist_neg.at(i) * min_dist.at(i) )     -
+			( min_neg.at(i) * min_dist.at(i)     * min_dist.at(i)     * min_dist_pos.at(i) ) - 
+			( minimi.at(i)  * min_dist_neg.at(i) * min_dist_pos.at(i) * min_dist_pos.at(i) ) );
+
+
+	db = (	( minimi.at(i)   * min_dist_pos.at(i) * min_dist_pos.at(i) ) +
+			( min_neg.at(i)  * min_dist.at(i)     * min_dist.at(i) )     +
+			( min_dist.at(i) * min_dist_neg.at(i) * min_dist_neg.at(i) ) -
+			( minimi.at(i)   * min_dist_neg.at(i) * min_dist_neg.at(i) ) -
+			( min_dist.at(i) * min_dist.at(i)     * min_dist.at(i) )     -
+			( min_neg.at(i)  * min_dist_pos.at(i) * min_dist_pos.at(i) ) 	);
+
+
+	dc = (	( min_dist.at(i) * min_dist.at(i) )     +
+			( minimi.at(i)   * min_dist_neg.at(i) ) +
+			( min_neg.at(i)  * min_dist_pos.at(i) ) -
+			( min_neg.at(i)  * min_dist.at(i) )     -
+			( minimi.at(i)   * min_dist_pos.at(i) ) -
+			( min_dist.at(i) * min_dist_neg.at(i) )	  );
+
+
+		a = da / delta;
+		b = db / delta;
+		c = db / delta;
+		vortex = - b / ( 2 * a );
+		vortey = - ( b * b - 4 * a * c ) / ( 4 * a );
+		xverticiMAX.push_back(vortex);
+		yverticiMAX.push_back(vortey);
+	}
+
+	cout << "Le x dei massimi valgono: " << endl;
+	for (int i = 0 ; i < max_size ; i++)
+	{
+	cout << xverticiMAX.at(i) << endl;
+	}
+
+
+	cout << "Le y dei massimi valgono: " << endl;
+	for (int i = 0 ; i < max_size ; i++)
+	{
+	cout << yverticiMAX.at(i) << endl;
+	}
+
+
+	cout << "Le x dei minimi valgono: " << endl;
+	for (int i = 0 ; i < min_size ; i++)
+	{
+	cout << xverticiMIN.at(i) << endl;
+	}
+
+
+	cout << "Le y dei minimi valgono: " << endl;
+	for (int i = 0 ; i < min_size ; i++)
+	{
+	cout << yverticiMIN.at(i) << endl;
+	}
+
+
+
+
+	/* int q = 0;									//Algoritmo per la visualizzazione dei risultati
 	cout << "Massimi: " << endl;
-	while (massimi[i] != 0)
+	for (double massimi)
 	{
-		cout << massimi[i] << endl;
-		i++;
+		cout << massimi.at(q) << endl;
+		q++;
 	}
-	i = 0;
+	q = 0;
 	cout << "A una posizione di: " << endl;
-	while (max_dist[i] != 0)
+	while (max_dist.at(q) != 0)
 	{
-		cout << max_dist[i] << endl;
-		i++;
+		cout << max_dist.at(q) << endl;
+		q++;
 	}
 
 
-	i = 0;
+	q = 0;
 	cout << "Minimi: " << endl;
-	while (minimi[i] != 0)
+	while (minimi.at(q) != 0)
 	{
-		cout << minimi[i] << endl;
-		i++;
+		cout << minimi.at(q) << endl;
+		q++;
 	}
-	i = 0;
+	q = 0;
 	cout << "A una posizione di: " << endl;
-	while (min_dist[i] != 0)
+	while (min_dist.at(q) != 0)
 	{
-		cout << min_dist[i] << endl;
-		i++;
-	}
+		cout << min_dist.at(q) << endl;
+		q++;
+	}	*/
 
 	return 0;
-}}
+
 }
