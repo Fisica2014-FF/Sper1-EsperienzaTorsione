@@ -175,7 +175,7 @@ int main()
 
 
 	vector<int> eliminamassimi; //vector contenente la posizione dei valori da eliminare
-	vector<int eliminaminimi;
+	vector<int> eliminaminimi;
 	int temperasemax;
 	int temperasemin;
 
