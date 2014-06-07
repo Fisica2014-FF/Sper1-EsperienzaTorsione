@@ -201,11 +201,11 @@ int main()
 	{
 		if (abs (xverticiMIN.at(i) - xverticiMIN.at(i+1)) < 0.8 )
 		{
-			if (yverticiMIN.at(i) - yverticiMIN.at(i+1) > 0)
+			if (yverticiMIN.at(i) - yverticiMIN.at(i+1) < 0)
 			{
 				temperasemin = i+1;
 				eliminaminimi.push_back(temperasemin);
-			} else if (yverticiMIN.at(i) - yverticiMIN.at(i+1) < 0)
+			} else if (yverticiMIN.at(i) - yverticiMIN.at(i+1) > 0)
 			 {
 				temperasemin = i;
 				eliminaminimi.push_back(temperasemin);
