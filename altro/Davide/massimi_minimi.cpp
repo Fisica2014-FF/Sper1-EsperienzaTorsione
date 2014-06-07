@@ -216,22 +216,22 @@ int main()
 
 	int puliziamax = eliminamassimi.size();
 	int puliziamin = eliminaminimi.size();
-	int n = 0; //Variabile necessaria per regolare la modifica posizione vettori
+	int f = 0; //Variabile necessaria per regolare la modifica posizione vettori
 
 	for (int i = 0 ; i < puliziamax ; i++) //Pulisce il vector definitivo di massimi
 	{
-		xverticiMAX.erase( xverticiMAX.begin() + eliminamassimi.at(i - n) );
-		yverticiMAX.erase( yverticiMAX.begin() + eliminamassimi.at(i - n) );
-		n++;
+		xverticiMAX.erase( xverticiMAX.begin() + eliminamassimi.at(i - f) );
+		yverticiMAX.erase( yverticiMAX.begin() + eliminamassimi.at(i - f) );
+		f++;
 	}
 
-	n = 0;
+	f = 0;
 
 	for (int i = 0 ; i < puliziamin ; i++) //Pulisce il vector definitivo di minimi
 	{
-		xverticiMIN.erase( xverticiMIN.begin() + eliminaminimi.at(i - n) );
-		yverticiMIN.erase( yverticiMIN.begin() + eliminaminimi.at(i - n) );
-		n++;
+		xverticiMIN.erase( xverticiMIN.begin() + eliminaminimi.at(i - f) );
+		yverticiMIN.erase( yverticiMIN.begin() + eliminaminimi.at(i - f) );
+		f++;
 	}
 
 	double max_v_size  = xverticiMAX.size();
