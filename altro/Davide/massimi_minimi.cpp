@@ -115,7 +115,7 @@ int main()
 			( massimi.at(i) * max_dist_pos.at(i) ) -
 			( max_pos.at(i) * max_dist_neg.at(i) )	  );
 
-cout <<"DELTA = " << delta << endl; //da togliere
+//cout <<"DELTA = " << delta << endl; //da togliere
 		a = da / delta;
 		b = db / delta;
 		c = dc / delta;
