@@ -172,41 +172,62 @@ int main()
 		xverticiMIN.push_back(vortex * 0.05);
 		yverticiMIN.push_back(vortey);
 	}
+
+
+	vector<int> eliminamassimi; //vector contenente la posizione dei valori da eliminare
+	vector<int eliminaminimi;
+	int temperasemax;
+	int temperasemin;
+
 	
 
-	for (int i = 0 ; i < max_size ; i++) //Permette di togliere eventuali massimi fasulli
+	for (int i = 0 ; i < max_size ; i++) //Permette di trovare eventuali massimi fasulli
 	{
 		if (abs (xverticiMAX.at(i) - xverticiMAX.at(i+1)) < 0.8 )
 		{
 			if (yverticiMAX.at(i) - yverticiMAX.at(i+1) > 0)
 			{
-				xverticiMAX.erase(xverticiMAX.begin() + i+1);
-				yverticiMAX.erase(xverticiMAX.begin() + i+1);
+				temperasemax = i+1;
+				eliminamassimi.push_back(temperasemax);
 			} else if (yverticiMAX.at(i) - yverticiMAX.at(i+1) < 0)
 			 {
-				xverticiMAX.erase(xverticiMAX.begin() + i);
-				yverticiMAX.erase(yverticiMAX.begin() + i);
+				temperasemax = i;
+				eliminamassimi.push_back(temperasemax);
 			 }
 		}
 	}
 
 
-
-	for (int i = 0 ; i < min_size ; i++) //Permette di togliere eventuali minimi fasulli
+	for (int i = 0 ; i < min_size ; i++) //Permette di trovare eventuali minimi fasulli
 	{
 		if (abs (xverticiMIN.at(i) - xverticiMIN.at(i+1)) < 0.8 )
 		{
 			if (yverticiMIN.at(i) - yverticiMIN.at(i+1) > 0)
 			{
-				xverticiMIN.erase(xverticiMIN.begin() + i+1);
-				yverticiMIN.erase(xverticiMIN.begin() + i+1);
+				temperasemin = i+1;
+				eliminaminimi.push_back(temperasemin);
 			} else if (yverticiMIN.at(i) - yverticiMIN.at(i+1) < 0)
 			 {
-				xverticiMIN.erase(xverticiMIN.begin() + i);
-				yverticiMIN.erase(yverticiMIN.begin() + i);
+				temperasemin = i;
+				eliminaminimi.push_back(temperasemin);
 			 }
 		}
 	}
+	int puliziamin = eliminaminimi.size();
+	int puliziamax = eliminamassimi.size();
+
+	for (int i = 0 ; i < puliziamax ; i++) //Pulisce il vector definitivo di massimi
+	{
+		xverticiMAX.erase( xverticiMAX.begin() + eliminamassimi.at(i) );
+		yverticiMAX.erase( yverticiMAX.begin() + eliminamassimi.at(i) );
+	}
+
+	for (int i = 0 ; i < puliziamax ; i++) //Pulisce il vector definitivo di minimi
+	{
+		xverticiMIN.erase( xverticiMIN.begin() + eliminaminimi.at(i) );
+		yverticiMIN.erase( yverticiMIN.begin() + eliminaminimi.at(i) );
+	}
+
 
 		//cout << "Le x dei massimi valgono: " << endl;
 	for (int i = 0 ; i < max_size ; i++)
