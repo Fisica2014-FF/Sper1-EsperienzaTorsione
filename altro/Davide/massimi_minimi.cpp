@@ -116,7 +116,6 @@ int main()
 			( massimi.at(i) * max_dist_pos.at(i) ) -
 			( max_pos.at(i) * max_dist_neg.at(i) )	  );
 
-//cout <<"DELTA = " << delta << endl; //da togliere
 		a = da / delta;
 		b = db / delta;
 		c = dc / delta;
@@ -181,7 +180,7 @@ int main()
 
 	
 
-	for (int i = 0 ; i < max_size ; i++) //Permette di trovare eventuali massimi fasulli
+	for (int i = 0 ; i < max_size - 1 ; i++) //Permette di trovare eventuali massimi fasulli
 	{
 		if (abs (xverticiMAX.at(i) - xverticiMAX.at(i+1)) < 0.8 )
 		{
@@ -198,7 +197,7 @@ int main()
 	}
 
 
-	for (int i = 0 ; i < min_size ; i++) //Permette di trovare eventuali minimi fasulli
+	for (int i = 0 ; i < min_size - 1; i++) //Permette di trovare eventuali minimi fasulli
 	{
 		if (abs (xverticiMIN.at(i) - xverticiMIN.at(i+1)) < 0.8 )
 		{
@@ -212,9 +211,11 @@ int main()
 				eliminaminimi.push_back(temperasemin);
 			 }
 		}
-	}
-	int puliziamin = eliminaminimi.size();
+	} 
+
+
 	int puliziamax = eliminamassimi.size();
+	int puliziamin = eliminaminimi.size();
 
 	for (int i = 0 ; i < puliziamax ; i++) //Pulisce il vector definitivo di massimi
 	{
@@ -226,18 +227,21 @@ int main()
 	{
 		xverticiMIN.erase( xverticiMIN.begin() + eliminaminimi.at(i) );
 		yverticiMIN.erase( yverticiMIN.begin() + eliminaminimi.at(i) );
-	}
+	} 
+
+	double max_v_size  = xverticiMAX.size();
+	double min_v_size = xverticiMIN.size();
 
 
 		//cout << "Le x dei massimi valgono: " << endl;
-	for (int i = 0 ; i < max_size ; i++)
+	for (int i = 0 ; i < max_v_size ; i++)
 	{
 		cout << xverticiMAX.at(i) << "\t" << yverticiMAX.at(i) << endl;
 	}
 
 
 	//cout << "Le x dei minimi valgono: " << endl;
-	for (int i = 0 ; i < min_size ; i++)
+	for (int i = 0 ; i < min_v_size ; i++)
 	{
 		cout << xverticiMIN.at(i) << "\t" << yverticiMIN.at(i) << endl;
 	}
