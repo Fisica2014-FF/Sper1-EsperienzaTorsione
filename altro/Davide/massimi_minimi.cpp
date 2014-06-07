@@ -222,7 +222,7 @@ int main()
 		yverticiMAX.erase( yverticiMAX.begin() + eliminamassimi.at(i) );
 	}
 
-	for (int i = 0 ; i < puliziamax ; i++) //Pulisce il vector definitivo di minimi
+	for (int i = 0 ; i < puliziam ; i++) //Pulisce il vector definitivo di minimi
 	{
 		xverticiMIN.erase( xverticiMIN.begin() + eliminaminimi.at(i) );
 		yverticiMIN.erase( yverticiMIN.begin() + eliminaminimi.at(i) );
