@@ -121,7 +121,7 @@ int main()
 		c = dc / delta;
 		vortex = - b / ( 2 * c );
 		vortey = - ( b * b - 4 * a * c ) / ( 4 * c );
-		xverticiMAX.push_back(vortex);
+		xverticiMAX.push_back(vortex * 0.05);
 		yverticiMAX.push_back(vortey); 
 	}
 
@@ -168,7 +168,7 @@ int main()
 		c = dc / delta;		
 		vortex = - b / ( 2 * c );
 		vortey = - ( b * b - 4 * a * c ) / ( 4 * c );
-		xverticiMIN.push_back(vortex);
+		xverticiMIN.push_back(vortex * 0.05);
 		yverticiMIN.push_back(vortey);
 	}
 	
