@@ -27,7 +27,7 @@ int main()
 
 	for (int i = 1 ; i < ( n - 1 ) ; i++)
 	{
-		if (valori.at(i) > valori.at(i-1) && valori.at(i) > valori.at(i+1) )	//Trova i massimi
+		if (valori.at(i) > valori.at(i-1) && valori.at(i) >= valori.at(i+1) )	//Trova i massimi
 		{
 			temp = valori.at(i);
 			temp_neg = valori.at(i-1);
@@ -55,7 +55,7 @@ int main()
 	j = 0;
 	for (int i = 1 ; i < ( n - 1 ) ; i++)
 	{
-		if (valori.at(i) < valori.at(i-1) && valori.at(i) < valori.at(i+1) )
+		if (valori.at(i) < valori.at(i-1) && valori.at(i) <= valori.at(i+1) )
 		{
 			temp = valori.at(i);
 			temp_neg = valori.at(i-1);
@@ -73,6 +73,7 @@ int main()
 			j++;
 		}
 	}
+
 
 
 	double delta, da, db, dc, a, b, c, vortex, vortey;		//Parametri della parabola
@@ -172,6 +173,40 @@ int main()
 		yverticiMIN.push_back(vortey);
 	}
 	
+
+	for (int i = 0 ; i < max_size ; i++) //Permette di togliere eventuali massimi fasulli
+	{
+		if (abs (xverticiMAX.at(i) - xverticiMAX.at(i+1)) < 0.8 )
+		{
+			if (yverticiMAX.at(i) - yverticiMAX.at(i+1) > 0)
+			{
+				xverticiMAX.erase(xverticiMAX.begin() + i+1);
+				yverticiMAX.erase(xverticiMAX.begin() + i+1);
+			} else if (yverticiMAX.at(i) - yverticiMAX.at(i+1) < 0)
+			 {
+				xverticiMAX.erase(xverticiMAX.begin() + i);
+				yverticiMAX.erase(yverticiMAX.begin() + i);
+			 }
+		}
+	}
+
+
+
+	for (int i = 0 ; i < min_size ; i++) //Permette di togliere eventuali minimi fasulli
+	{
+		if (abs (xverticiMIN.at(i) - xverticiMIN.at(i+1)) < 0.8 )
+		{
+			if (yverticiMIN.at(i) - yverticiMIN.at(i+1) > 0)
+			{
+				xverticiMIN.erase(xverticiMIN.begin() + i+1);
+				yverticiMIN.erase(xverticiMIN.begin() + i+1);
+			} else if (yverticiMIN.at(i) - yverticiMIN.at(i+1) < 0)
+			 {
+				xverticiMIN.erase(xverticiMIN.begin() + i);
+				yverticiMIN.erase(yverticiMIN.begin() + i);
+			 }
+		}
+	}
 
 		//cout << "Le x dei massimi valgono: " << endl;
 	for (int i = 0 ; i < max_size ; i++)
