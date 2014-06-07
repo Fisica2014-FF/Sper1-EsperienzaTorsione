@@ -173,35 +173,21 @@ cout <<"DELTA = " << delta << endl; //da togliere
 	}
 	
 
-	/*	cout << "Le x dei massimi valgono: " << endl;
+		//cout << "Le x dei massimi valgono: " << endl;
 	for (int i = 0 ; i < max_size ; i++)
 	{
-	cout << xverticiMAX.at(i) << endl;
+		cout << xverticiMAX.at(i) << "\t" << yverticiMAX.at(i) << endl;
 	}
 
 
-	cout << "Le y dei massimi valgono: " << endl;
-	for (int i = 0 ; i < max_size ; i++)
-	{
-	cout << yverticiMAX.at(i) << endl;
-	}
-
-
-	cout << "Le x dei minimi valgono: " << endl;
+	//cout << "Le x dei minimi valgono: " << endl;
 	for (int i = 0 ; i < min_size ; i++)
 	{
-	cout << xverticiMIN.at(i) << endl;
+		cout << xverticiMIN.at(i) << "\t" << yverticiMIN.at(i) << endl;
 	}
 
 
-	cout << "Le y dei minimi valgono: " << endl;
-	for (int i = 0 ; i < min_size ; i++)
-	{
-	cout << yverticiMIN.at(i) << endl;
-	}
-
-
-
+/*
 
 	 int q = 0;									//Algoritmo per la visualizzazione dei risultati
 	cout << "Massimi: " << endl;
@@ -232,8 +218,8 @@ cout <<"DELTA = " << delta << endl; //da togliere
 	{
 		cout << min_dist.at(q) << endl;
 		q++;
-	}	*/
-
+	}
+*/
 	return 0;
 
 }
