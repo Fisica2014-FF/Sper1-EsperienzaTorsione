@@ -160,7 +160,7 @@ int main()
 			( min_neg.at(i)  * min_dist_pos.at(i) ) -
 			( min_neg.at(i)  * min_dist.at(i) )     -
 			( minimi.at(i)   * min_dist_pos.at(i) ) -
-			( min_dist.at(i) * min_dist_neg.at(i) )	  );
+			( min_pos.at(i) * min_dist_neg.at(i) )	  );
 
 
 		a = da / delta;
