@@ -121,7 +121,7 @@ int main()
 		c = dc / delta;
 		vortex = - b / ( 2 * c );
 		vortey = - ( b * b - 4 * a * c ) / ( 4 * c );
-		xverticiMAX.push_back(vortex * 0.05);
+		xverticiMAX.push_back(vortex * 0.05); //Presente valore di conversione delle x
 		yverticiMAX.push_back(vortey); 
 	}
 
@@ -182,13 +182,13 @@ int main()
 
 	for (int i = 0 ; i < max_size - 1 ; i++) //Permette di trovare eventuali massimi fasulli
 	{
-		if (abs (xverticiMAX.at(i) - xverticiMAX.at(i+1)) < 0.8 )
+		if (abs (xverticiMAX.at(i) - xverticiMAX.at(i+1)) < 0.8 ) //Intervallo considerato errore
 		{
-			if (yverticiMAX.at(i) - yverticiMAX.at(i+1) > 0)
+			if (abs( yverticiMAX.at(i) ) - abs( yverticiMAX.at(i+1) ) >= 0)
 			{
 				temperasemax = i+1;
 				eliminamassimi.push_back(temperasemax);
-			} else if (yverticiMAX.at(i) - yverticiMAX.at(i+1) < 0)
+			} else if (abs ( yverticiMAX.at(i) ) - abs ( yverticiMAX.at(i+1) ) < 0 && temperasemax != i)
 			 {
 				temperasemax = i;
 				eliminamassimi.push_back(temperasemax);
@@ -201,11 +201,11 @@ int main()
 	{
 		if (abs (xverticiMIN.at(i) - xverticiMIN.at(i+1)) < 0.8 )
 		{
-			if (yverticiMIN.at(i) - yverticiMIN.at(i+1) < 0)
+			if (abs ( yverticiMIN.at(i) ) - abs ( yverticiMIN.at(i+1) ) <= 0)
 			{
 				temperasemin = i+1;
 				eliminaminimi.push_back(temperasemin);
-			} else if (yverticiMIN.at(i) - yverticiMIN.at(i+1) > 0)
+			} else if (abs ( yverticiMIN.at(i) ) - abs ( yverticiMIN.at(i+1) ) > 0 && temperasemin != i )
 			 {
 				temperasemin = i;
 				eliminaminimi.push_back(temperasemin);
@@ -217,6 +217,7 @@ int main()
 	int puliziamax = eliminamassimi.size();
 	int puliziamin = eliminaminimi.size();
 
+
 	for (int i = 0 ; i < puliziamax ; i++) //Pulisce il vector definitivo di massimi
 	{
 		xverticiMAX.erase( xverticiMAX.begin() + eliminamassimi.at(i) );
@@ -227,7 +228,7 @@ int main()
 	{
 		xverticiMIN.erase( xverticiMIN.begin() + eliminaminimi.at(i) );
 		yverticiMIN.erase( yverticiMIN.begin() + eliminaminimi.at(i) );
-	} 
+	}
 
 	double max_v_size  = xverticiMAX.size();
 	double min_v_size = xverticiMIN.size();
