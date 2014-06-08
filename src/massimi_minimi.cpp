@@ -180,15 +180,15 @@ int main()
 
 	
 
-	for (int i = 0 ; i < max_size - 1 ; i++) //Permette di trovare eventuali massimi fasulli
+	for (int i = 0 ; i < max_size -1 ; i++) //Permette di trovare eventuali massimi fasulli
 	{
 		if (abs (xverticiMAX.at(i) - xverticiMAX.at(i+1)) < 0.8 ) //Intervallo considerato errore
 		{
-			if (abs( yverticiMAX.at(i) ) - abs( yverticiMAX.at(i+1) ) >= 0)
+			if ( yverticiMAX.at(i)  -  yverticiMAX.at(i+1)  >= 0)
 			{
 				temperasemax = i+1;
 				eliminamassimi.push_back(temperasemax);
-			} else if (abs ( yverticiMAX.at(i) ) - abs ( yverticiMAX.at(i+1) ) < 0 && temperasemax != i)
+			} else if ( yverticiMAX.at(i) -  yverticiMAX.at(i+1)  < 0 && temperasemax != i)
 			 {
 				temperasemax = i;
 				eliminamassimi.push_back(temperasemax);
@@ -201,11 +201,11 @@ int main()
 	{
 		if (abs (xverticiMIN.at(i) - xverticiMIN.at(i+1)) < 0.8 )
 		{
-			if (abs ( yverticiMIN.at(i) ) - abs ( yverticiMIN.at(i+1) ) <= 0)
+			if ( yverticiMIN.at(i) - yverticiMIN.at(i+1) <= 0 && temperasemin != i )
 			{
 				temperasemin = i+1;
 				eliminaminimi.push_back(temperasemin);
-			} else if (abs ( yverticiMIN.at(i) ) - abs ( yverticiMIN.at(i+1) ) > 0 && temperasemin != i )
+			} else if ( yverticiMIN.at(i) - yverticiMIN.at(i+1) > 0 )
 			 {
 				temperasemin = i;
 				eliminaminimi.push_back(temperasemin);
@@ -220,8 +220,8 @@ int main()
 
 	for (int i = 0 ; i < puliziamax ; i++) //Pulisce il vector definitivo di massimi
 	{
-		xverticiMAX.erase( xverticiMAX.begin() + eliminamassimi.at(i - f) );
-		yverticiMAX.erase( yverticiMAX.begin() + eliminamassimi.at(i - f) );
+		xverticiMAX.erase( xverticiMAX.begin() + eliminamassimi.at(i) - f );
+		yverticiMAX.erase( yverticiMAX.begin() + eliminamassimi.at(i) - f );
 		f++;
 	}
 
@@ -229,8 +229,8 @@ int main()
 
 	for (int i = 0 ; i < puliziamin ; i++) //Pulisce il vector definitivo di minimi
 	{
-		xverticiMIN.erase( xverticiMIN.begin() + eliminaminimi.at(i - f) );
-		yverticiMIN.erase( yverticiMIN.begin() + eliminaminimi.at(i - f) );
+		xverticiMIN.erase( xverticiMIN.begin() + eliminaminimi.at(i) - f );
+		yverticiMIN.erase( yverticiMIN.begin() + eliminaminimi.at(i) - f );
 		f++;
 	}
 
