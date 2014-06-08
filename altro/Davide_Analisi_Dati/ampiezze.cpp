@@ -60,6 +60,6 @@ int main()
 	sigma = ( sigmap + sigman ) / 2;
 
 	
-	cout << media << endl << sigma << endl;
+	cout << media << "\t" << sigma << endl;
 	return 0;
 } 
