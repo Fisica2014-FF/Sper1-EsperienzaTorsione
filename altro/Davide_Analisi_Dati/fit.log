@@ -1,0 +1,265 @@
+
+
+*******************************************************************************
+Sun Jun  8 15:23:27 2014
+
+
+FIT:    data read from 'medieampiezze_regime' u 1:2:3
+        format = x:z:s
+        #datapoints = 18
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+BREAK:          Undefined value during function evaluation
+
+
+
+*******************************************************************************
+Sun Jun  8 15:23:34 2014
+
+
+FIT:    data read from 'medieampiezze_regime'
+        format = z
+        #datapoints = 18
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+BREAK:          Undefined value during function evaluation
+
+
+
+*******************************************************************************
+Sun Jun  8 15:24:08 2014
+
+
+FIT:    data read from 'medieampiezze_regime'
+        format = z
+        #datapoints = 18
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+BREAK:          Undefined value during function evaluation
+
+
+
+*******************************************************************************
+Sun Jun  8 15:24:42 2014
+
+
+FIT:    data read from 'medieampiezze_regime'
+        format = z
+        #datapoints = 18
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+BREAK:          Undefined value during function evaluation
+
+
+
+*******************************************************************************
+Sun Jun  8 15:25:04 2014
+
+
+FIT:    data read from 'medieampiezze_regime'
+        format = z
+        #datapoints = 18
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+BREAK:          Undefined value during function evaluation
+
+
+
+*******************************************************************************
+Sun Jun  8 15:25:14 2014
+
+
+FIT:    data read from 'medieampiezze_regime'
+        format = z
+        #datapoints = 18
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.504153          delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.71109
+
+initial set of free parameter values
+
+a               = 1
+w               = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.165151
+rel. change during last iteration : -1.12601e-13
+
+degrees of freedom    (FIT_NDF)                        : 16
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.101597
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0103219
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 0.441224         +/- 0.2301       (52.15%)
+w               = 1.3091           +/- 0.1808       (13.81%)
+
+
+correlation matrix of the fit parameters:
+
+               a      w      
+a               1.000 
+w              -0.954  1.000 
+
+
+*******************************************************************************
+Sun Jun  8 15:26:12 2014
+
+
+FIT:    data read from 'medieampiezze_regime'
+        format = z
+	y range restricted to [0.661121 : 1.33888]
+        #datapoints = 18
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 53.0593           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 9.3236
+
+initial set of free parameter values
+
+a               = 0.441224
+w               = 1.3091
+
+After 14 iterations the fit converged.
+final sum of squares of residuals : 0.203102
+rel. change during last iteration : -1.31486e-06
+
+degrees of freedom    (FIT_NDF)                        : 16
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.112667
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0126939
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 2.23637e+07      +/- 6.002e+15    (2.684e+10%)
+w               = 1.53284e+08      +/- 4.118e+16    (2.687e+10%)
+
+
+correlation matrix of the fit parameters:
+
+               a      w      
+a               1.000 
+w               1.000  1.000 
+
+
+*******************************************************************************
+Sun Jun  8 15:26:50 2014
+
+
+FIT:    data read from 'medieampiezze_regime'
+        format = z
+	y range restricted to [0.831282 : 1.16872]
+        #datapoints = 18
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.216198          delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4.61113e-09
+
+initial set of free parameter values
+
+a               = 2.23637e+07
+w               = 1.53284e+08
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 0.216183
+rel. change during last iteration : -5.02411e-08
+
+degrees of freedom    (FIT_NDF)                        : 16
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.116239
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0135115
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 2.22263e+07      +/- 6.062e+15    (2.728e+10%)
+w               = 1.53304e+08      +/- 4.186e+16    (2.73e+10%)
+
+
+correlation matrix of the fit parameters:
+
+               a      w      
+a               1.000 
+w               1.000  1.000 
+
+
+*******************************************************************************
+Sun Jun  8 15:26:55 2014
+
+
+FIT:    data read from 'medieampiezze_regime'
+        format = z
+	y range restricted to [0.831282 : 1.16872]
+        #datapoints = 18
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.216183          delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4.60993e-09
+
+initial set of free parameter values
+
+a               = 2.22263e+07
+w               = 1.53304e+08
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 0.216183
+rel. change during last iteration : -3.33811e-15
+
+degrees of freedom    (FIT_NDF)                        : 16
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.116239
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0135115
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 2.22263e+07      +/- 6.063e+15    (2.728e+10%)
+w               = 1.53304e+08      +/- 4.186e+16    (2.731e+10%)
+
+
+correlation matrix of the fit parameters:
+
+               a      w      
+a               1.000 
+w               1.000  1.000 

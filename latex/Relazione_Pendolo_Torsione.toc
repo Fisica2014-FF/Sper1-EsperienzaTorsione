@@ -1,0 +1,9 @@
+\select@language {italian}
+\contentsline {section}{\numberline {I}Apparato strumentale}{2}
+\contentsline {section}{\numberline {II}Metodologia di misura}{2}
+\contentsline {section}{\numberline {III}Presentazione dei dati}{3}
+\contentsline {subsection}{\numberline {I}Tabelle}{3}
+\contentsline {subsection}{\numberline {II}Grafici}{4}
+\contentsline {section}{\numberline {IV}Analisi dei dati}{13}
+\contentsline {section}{\numberline {V}Conclusioni}{13}
+\contentsline {section}{\numberline {VI}Codice}{13}
