@@ -6,7 +6,8 @@ using namespace std;
 
 int main()
 {
- int n,m = 0;
+ int n = 0;
+ int m = 0;
  double temp;
  vector<double> data;
  vector<double> dist;
@@ -16,7 +17,7 @@ int main()
 	n++;
  }
 
-cout << "ENNE: " << n << endl;
+cout << "ENNE: " << n << endl;		//TOGLIERE
 
  //sort(data.begin() , data.begin() + n);
  

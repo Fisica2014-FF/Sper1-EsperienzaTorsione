@@ -6,7 +6,8 @@ using namespace std;
 
 int main()
 {
- int n,m = 0;
+ int n = 0;
+ int m = 0;
  double temp;
  vector<double> data;
  vector<double> dist;
@@ -16,27 +17,9 @@ int main()
 	n++;
  }
 
-cout << "ENNE: " << n << endl;		//TOGLIERE
 
- //sort(data.begin() , data.begin() + n);
+ sort(data.begin() , data.begin() + n);
  
-for ( int i = 0 ; i < n ; i ++ ) cout << "Dato: " << data.at(i) << endl; //TOGLIERE
- 
- /*for ( int i = 0 ; i < n ; i++ )		//Algoritmo per ordinare il vector contenente i dati
- {
-	for ( int j = 0 ; j < n ; j++ )
-	{
-	 if ( data.at(i) < data.at(j) && j < i )
-	 {
-		 temp = data.at(j);
-		 data.at(j) = data.at(i);
-		 data.at(i) = temp;
-	 }
-	}
- }
-
-
-
 
 
  for (int i = 0 ; i < n - 1 ; i++)		//Trova i periodi
@@ -62,6 +45,6 @@ for ( int i = 0 ; i < n ; i ++ ) cout << "Dato: " << data.at(i) << endl; //TOGLI
  sigma = sqrt ( sommasigma / ( m - 1 ) );
 
 
- cout << media << "\t" << sigma << endl;		//Output */
+ cout << media << "\t" << sigma << endl;		//Output
  return 0;
 }
