@@ -44,7 +44,11 @@ int main()
  }
  sigma = sqrt ( sommasigma / ( m - 1 ) );
 
+ double puls, spuls;				//Converte tutto in frequenza [Hz]
+ puls = (2 * M_PI ) / media; 
+ spuls = ( 2 * M_PI * sigma ) / ( media * media);
 
- cout << media << "\t" << sigma << endl;		//Output
+
+ cout << puls << "\t" << spuls << endl;		//Output
  return 0;
 }
