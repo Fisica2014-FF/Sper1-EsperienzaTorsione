@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.13)  9 JUN 2014 16:19
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.13)  9 JUN 2014 17:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1906,24 +1906,28 @@ one.toc)
 \openout4 = `Relazione_Pendolo_Torsione.toc'.
 
  (./sezioni/descrizione_app_strumentale.tex) (./sezioni/metodologia_misura.tex)
- [2] (./sezioni/pres_dati_tabelle.tex)
-[3] (./sezioni/pres_dati_grafici.tex (../gnuplot/immagini/0.900dgdecad.tex)
+ [2] (./sezioni/pres_dati_tabelle.tex
+(./tabelle/puls_smorz_tab.tex)
+LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <9> not available
+(Font)              Font shape `OT1/pplx/b/n' tried instead on input line 11.
+ (./tabelle/puls_smorz_graf.tex)) [3] [4]
+(./sezioni/pres_dati_grafici.tex (../gnuplot/immagini/0.900dgdecad.tex)
 (../gnuplot/immagini/0.920dgdecad.tex) (../gnuplot/immagini/0.940dgdecad.tex)
-(../gnuplot/immagini/0.960dgdecad.tex) [4
+(../gnuplot/immagini/0.960dgdecad.tex) [5
 
 ]
 (../gnuplot/immagini/0.965dgdecad.tex) (../gnuplot/immagini/0.966dgdecad.tex)
-[5] (../gnuplot/immagini/0.967dgdecad.tex)
-(../gnuplot/immagini/0.968dgdecad.tex) [6]
+[6] (../gnuplot/immagini/0.967dgdecad.tex)
+(../gnuplot/immagini/0.968dgdecad.tex) [7]
 (../gnuplot/immagini/0.969dgdecad.tex) (../gnuplot/immagini/0.970dgdecad.tex)
-[7] (../gnuplot/immagini/0.975dgdecad.tex)
-(../gnuplot/immagini/0.980dgdecad.tex) [8]
+[8] (../gnuplot/immagini/0.975dgdecad.tex)
+(../gnuplot/immagini/0.980dgdecad.tex) [9]
 (../gnuplot/immagini/1.000dgdecad.tex) (../gnuplot/immagini/1.020dgdecad.tex)
-[9] (../gnuplot/immagini/1.060dgdecad.tex)
-(../gnuplot/immagini/1.080dgdecad.tex) [10]
+[10] (../gnuplot/immagini/1.060dgdecad.tex)
+(../gnuplot/immagini/1.080dgdecad.tex) [11]
 (../gnuplot/immagini/1.100dgdecad.tex) (../gnuplot/immagini/frequenza.tex)
-[11]) [12] (./sezioni/analisi.tex) (./sezioni/conclusioni.tex)
-(./sezioni/codice.tex) [13
+[12]) [13] (./sezioni/analisi.tex) (./sezioni/conclusioni.tex)
+(./sezioni/codice.tex) [14
 
 ] (./Relazione_Pendolo_Torsione.aux)
 
@@ -1932,11 +1936,11 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 29725 strings out of 493485
- 580610 string characters out of 3143526
- 895328 words of memory out of 3000000
- 32383 multiletter control sequences out of 15000+200000
- 44118 words of font info for 153 fonts, out of 3000000 for 9000
+ 29752 strings out of 493485
+ 580993 string characters out of 3143526
+ 894400 words of memory out of 3000000
+ 32391 multiletter control sequences out of 15000+200000
+ 46606 words of font info for 162 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,11n,57p,478b,714s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1946,10 +1950,10 @@ fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pal
 atino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Relazione_Pendolo_Torsione.pdf (13 pages, 260247 bytes).
+Output written on Relazione_Pendolo_Torsione.pdf (14 pages, 264757 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 49677 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 54285 words of extra memory for PDF output out of 61914 (max. 10000000)
 
