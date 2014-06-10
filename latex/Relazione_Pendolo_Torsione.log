@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.13)  9 JUN 2014 17:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.13)  10 JUN 2014 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1573,7 +1573,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@grafico=\count307
    defining Unicode char U+00B0 (decimal 176)
 )
-(./Relazione_Pendolo_Torsione.aux)
+(./Relazione_Pendolo_Torsione.aux
+
+LaTeX Warning: Label `gr:frequenza.tex' multiply defined.
+
+)
 \openout1 = `Relazione_Pendolo_Torsione.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -1590,8 +1594,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 15.
 LaTeX Font Info:    Try loading font information for LGR+cmr on input line 15.
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/lgrcmr.fd
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/lgrcmr.fd
 File: lgrcmr.fd 2008/06/17 v2.3 Greek Computer Modern
 )
 LaTeX Font Info:    ... okay on input line 15.
@@ -1912,48 +1915,58 @@ LaTeX Font Info:    Font shape `OT1/pplx/bx/n' in size <9> not available
 (Font)              Font shape `OT1/pplx/b/n' tried instead on input line 11.
  (./tabelle/puls_smorz_graf.tex)) [3] [4]
 (./sezioni/pres_dati_grafici.tex (../gnuplot/immagini/0.900dgdecad.tex)
-(../gnuplot/immagini/0.920dgdecad.tex) (../gnuplot/immagini/0.940dgdecad.tex)
-(../gnuplot/immagini/0.960dgdecad.tex) [5
+(../gnuplot/immagini/0.900greg.tex) (../gnuplot/immagini/0.920dgdecad.tex)
+(../gnuplot/immagini/0.920greg.tex) [5
 
-]
-(../gnuplot/immagini/0.965dgdecad.tex) (../gnuplot/immagini/0.966dgdecad.tex)
-[6] (../gnuplot/immagini/0.967dgdecad.tex)
-(../gnuplot/immagini/0.968dgdecad.tex) [7]
-(../gnuplot/immagini/0.969dgdecad.tex) (../gnuplot/immagini/0.970dgdecad.tex)
-[8] (../gnuplot/immagini/0.975dgdecad.tex)
-(../gnuplot/immagini/0.980dgdecad.tex) [9]
-(../gnuplot/immagini/1.000dgdecad.tex) (../gnuplot/immagini/1.020dgdecad.tex)
-[10] (../gnuplot/immagini/1.060dgdecad.tex)
-(../gnuplot/immagini/1.080dgdecad.tex) [11]
-(../gnuplot/immagini/1.100dgdecad.tex) (../gnuplot/immagini/frequenza.tex)
-[12]) [13] (./sezioni/analisi.tex) (./sezioni/conclusioni.tex)
-(./sezioni/codice.tex) [14
+] (../gnuplot/immagini/0.940dgdecad.tex)
+(../gnuplot/immagini/0.940greg.tex) [6] (../gnuplot/immagini/0.960dgdecad.tex)
+(../gnuplot/immagini/0.960greg.tex) [7] (../gnuplot/immagini/0.965dgdecad.tex)
+(../gnuplot/immagini/0.965greg.tex) [8] (../gnuplot/immagini/0.966dgdecad.tex)
+(../gnuplot/immagini/0.966greg.tex) [9] (../gnuplot/immagini/0.967dgdecad.tex)
+(../gnuplot/immagini/0.967greg.tex) [10] (../gnuplot/immagini/0.968dgdecad.tex)
+(../gnuplot/immagini/0.968greg.tex) [11] (../gnuplot/immagini/0.969dgdecad.tex)
+(../gnuplot/immagini/0.969greg.tex) [12] (../gnuplot/immagini/0.970dgdecad.tex)
+(../gnuplot/immagini/0.970greg.tex) [13] (../gnuplot/immagini/0.975dgdecad.tex)
+(../gnuplot/immagini/0.975greg.tex) [14] (../gnuplot/immagini/0.980dgdecad.tex)
+(../gnuplot/immagini/0.980greg.tex) [15] (../gnuplot/immagini/1.000dgdecad.tex)
+(../gnuplot/immagini/1.000greg.tex) [16] (../gnuplot/immagini/1.020dgdecad.tex)
+(../gnuplot/immagini/1.020greg.tex) [17] (../gnuplot/immagini/1.060dgdecad.tex)
+(../gnuplot/immagini/1.060greg.tex) [18] (../gnuplot/immagini/1.080dgdecad.tex)
+(../gnuplot/immagini/1.080greg.tex) [19] (../gnuplot/immagini/1.100dgdecad.tex)
+(../gnuplot/immagini/1.100greg.tex) [20] (../gnuplot/immagini/frequenza.tex))
+[21] [22] (./sezioni/analisi.tex) (./sezioni/conclusioni.tex)
+(./sezioni/codice.tex) [23
 
 ] (./Relazione_Pendolo_Torsione.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 41.12pt have occurred.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 29752 strings out of 493485
- 580993 string characters out of 3143526
- 894400 words of memory out of 3000000
- 32391 multiletter control sequences out of 15000+200000
- 46606 words of font info for 162 fonts, out of 3000000 for 9000
+ 30629 strings out of 493485
+ 597337 string characters out of 3143526
+ 1065960 words of memory out of 3000000
+ 33161 multiletter control sequences out of 15000+200000
+ 51892 words of font info for 207 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,11n,57p,478b,714s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pal
-atino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Relazione_Pendolo_Torsione.pdf (14 pages, 264757 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fp
+l/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Relazione_Pendolo_Torsione.pdf (23 pages, 402616 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  54285 words of extra memory for PDF output out of 61914 (max. 10000000)
 
