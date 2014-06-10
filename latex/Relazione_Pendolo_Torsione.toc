@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {II}Metodologia di misura}{2}
 \contentsline {section}{\numberline {III}Presentazione dei dati}{3}
 \contentsline {subsection}{\numberline {I}Tabelle}{3}
-\contentsline {subsection}{\numberline {II}Grafici}{5}
-\contentsline {section}{\numberline {IV}Analisi dei dati}{6}
-\contentsline {section}{\numberline {V}Conclusioni}{6}
-\contentsline {section}{\numberline {VI}Codice}{6}
+\contentsline {subsection}{\numberline {II}Grafici}{6}
+\contentsline {section}{\numberline {IV}Analisi dei dati}{7}
+\contentsline {section}{\numberline {V}Conclusioni}{7}
+\contentsline {section}{\numberline {VI}Codice}{7}
