@@ -15,7 +15,7 @@ set ytics border in nomirror rangelimit
 do for [f in "0.900d  0.920d  0.940d  0.960d  0.965d  0.966d  0.967d  0.968d  0.969d  0.970d  0.975d  0.980d  1.000d  1.020d  1.060d  1.080d"] {
     outfile='gnuplot/immagini/'.f.'gdecad.tex'
     set output outfile
-    set title  "Dati decadimento ".f
+    set title  ""
     
     set xlabel "Tempo $[s]$"
     set ylabel "Ampiezza [giri]"

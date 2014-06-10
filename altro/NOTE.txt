@@ -2,3 +2,4 @@ y = m *  x - m*x0 + y0
 discuss dati
 unit e titoli grafici
 togliere 1.100
+Pv n
