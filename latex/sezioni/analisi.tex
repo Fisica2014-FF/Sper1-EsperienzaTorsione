@@ -3,7 +3,7 @@ frequenza di campionamento di 20 Hertz, di molto superiore al
 Nyquist rate necessario per il pendolo (il doppio della massima frequenza
 necessaria), dato che come verificabile a vista ha una frequenza dell'ordine di 1 Hz. 
 Non ci sono quindi problemi di aliasing e sottocampionamento.
-Per quanto riguarda l'offset, è stato rifatta la calibrazione prima di ogni presa dati (inizio giornata) e si può vedere che era
+Per quanto riguarda l'offset, è stata rifatta la calibrazione prima di ogni presa dati (inizio giornata) e si può vedere che era
  calibrato da un'evidente simmetria rispetto all'asse delle ascisse.
 Per il calcolo dei massimi è stato utilizzato un programma che riconoscesse i punti di massimo e minimo approssimando
 la funzione come una parabola in un intorno dei dati ``stazionari`` (dati massimi e minimi locali) usando il dato precedente e il successivo,
@@ -13,7 +13,10 @@ vincolando la parabola a passare per questi 3 punti e trovandone il vertice. L'e
  Per una stima delle ampiezze legate alle frequenze di oscillazione sono stati presi i valori medi delle ordinate dei massimi (e dei valori assoluti dei minimi).
 
 Una stima della pulsazione di risonanza è stata fatta con un processo di esplorazione iniziale che ha permesso, attraverso
-il metodo di bisezione, di concentrarsi sull'area nella quale l'ampiezza era più alta. Il valore finale trovato risulta di...
+il metodo di bisezione, di concentrarsi sull'area nella quale l'ampiezza era più alta. Il valore finale trovato risulta di $0.968 Hz$.
+ Tale valore è stato scelto in quanto valore per il quale l'ampiezza misurata risultava più alta. L'errore preso è la precisione dello
+ strumento. Sono state abbandonate idee differenti sulla stima di questo valore in quanto dato l'apparato sperimentale l'errore non
+ può essere ridotto.
 Per stimare il coefficiente di smorzamento $\gamma$ legato al movimento dell'acqua è stato tentato un approccio diretto con gnuplot, ma i problemi del suo algoritmo 
 (Levenberg–Marquardt, una forma di step gradient descent) nel caso di funzioni come questa, in cui il gradiente dei minimi quadrati è pieno di punti 
 stazionari locali, ne hanno impedito l'applicabilità pratica. Quindi è stato scelto un'altro approccio che elimini questi problemi, in particolare limitando lo
@@ -29,12 +32,20 @@ Interpolando questi punti la funzione diventa dunque
 	\theta_0 e^{-\gamma t} \cdot 1 = \theta_0 e^{-\gamma t}.
 \]
 Interpolando questa funzione con i punti $(x_m,\log{f(x_m)})$ (le coordinate $f(x_m)$ sono state calcolate, nei casi in cui non fossero già un punto dei dati,
-interpolando linearmente tra i due punti più prossimi).
+approssimando linearmente tra i due punti più prossimi).
 
 %L'ampiezza massima della forzante è stata regolata a 10 milligiri perché altrimenti veniva
 La pulsazione di smorzamento è stata ottenuta attraverso una media pesata delle pulsazioni ottenute dallo studio dei periodi dei
-grafici durante la fase di smorzamento (vedasi tabella...)
+grafici durante la fase di smorzamento (vedasi tabella~\ref{tab:pulssmorz})
 La pulsazione propria è stata trovata attraverso la formula $\omega_0 =\sqrt{{\omega_s} ^ 2 + \gamma ^ 2 }$.
 Gli errori sono stati stimati a partire da una stima diretta con la sommatoria degli scarti al quadrato diviso $N-1$.
-I grafici rivelano che, entro gli errori casuali...
+I grafici rivelano che, entro gli errori casuali l'analisi dati compiuta risulta in linea con ciò che ci si aspettava. Asperità 
+presenti nel grafico posso essere connesse o a spike momentanei del sistema di misurazione o a movimenti bruschi che ne hanno
+ alterato il perfetto funzionamento. Dalla curva di risonanza, in particolare, si riconosce che i dati che peggio approssimano una
+ distribuzione teorica sono quelli che presentano un errore più elevato. Sebbene alcuni risultati dell'analisi dati
+ non sembrano rispecchiare al meglio la curva sperimentale non si riconosce in essi un errore sistematico che possa portare a un errata
+ stima dei risultati ottenuti, ad esempio nei grafici del moto a regime tutti i massimi sembrano leggermente spostati a destra ma ciò non influenza il calcolo
+ della frequenza. L'apparato strumentale, comunque, permetteva un'ottima
+ ricerca attorno al valore di risonanza, infatti la maggior parte dei dati non perfettamente coerenti sono a basse e alte frequenze,
+ comunque lontano dalla frequenza di risonanza.
 

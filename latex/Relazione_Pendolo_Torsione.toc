@@ -1,9 +1,9 @@
 \select@language {italian}
 \contentsline {section}{\numberline {I}Apparato strumentale}{2}
 \contentsline {section}{\numberline {II}Metodologia di misura}{2}
-\contentsline {section}{\numberline {III}Presentazione dei dati}{4}
-\contentsline {subsection}{\numberline {I}Tabelle}{4}
-\contentsline {subsection}{\numberline {II}Grafici}{7}
-\contentsline {section}{\numberline {IV}Analisi dei dati}{24}
+\contentsline {section}{\numberline {III}Presentazione dei dati}{3}
+\contentsline {subsection}{\numberline {I}Tabelle}{3}
+\contentsline {subsection}{\numberline {II}Grafici}{6}
+\contentsline {section}{\numberline {IV}Analisi dei dati}{23}
 \contentsline {section}{\numberline {V}Conclusioni}{24}
-\contentsline {section}{\numberline {VI}Codice}{25}
+\contentsline {section}{\numberline {VI}Codice}{24}
