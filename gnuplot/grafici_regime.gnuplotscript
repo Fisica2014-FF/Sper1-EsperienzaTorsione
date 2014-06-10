@@ -15,7 +15,7 @@ set ytics border in nomirror rangelimit
 do for [f in "0.900  0.920  0.940  0.960  0.965  0.966  0.967  0.968  0.969  0.970  0.975  0.980  1.000  1.020  1.060  1.080  1.100"] {
     outfile='gnuplot/immagini/'.f.'greg.tex'
     set output outfile
-    set title  "Dati a regime".f
+    set title  ""
     
     set xlabel "Tempo $[s]$"
     set ylabel "Ampiezza $[giri]$"

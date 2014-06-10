@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.13)  10 JUN 2014 21:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.13)  10 JUN 2014 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2125,11 +2125,11 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 30278 strings out of 493485
- 589985 string characters out of 3143526
- 1078652 words of memory out of 3000000
- 32754 multiletter control sequences out of 15000+200000
- 61969 words of font info for 264 fonts, out of 3000000 for 9000
+ 30592 strings out of 493485
+ 595812 string characters out of 3143526
+ 1077426 words of memory out of 3000000
+ 33056 multiletter control sequences out of 15000+200000
+ 62569 words of font info for 273 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,14n,57p,495b,715s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -2142,7 +2142,7 @@ public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 c8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Relazione_Pendolo_Torsione.pdf (36 pages, 429606 bytes).
+Output written on Relazione_Pendolo_Torsione.pdf (36 pages, 433065 bytes).
 PDF statistics:
  164 PDF objects out of 1000 (max. 8388607)
  114 compressed objects within 2 object streams
