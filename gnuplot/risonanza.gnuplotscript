@@ -14,7 +14,7 @@ set ytics border in nomirror rangelimit
 
 outfile='gnuplot/immagini/frequenza.tex'
 set output outfile
-set title  "Ampiezze a regime".f
+set title  "Ampiezze a regime"
 
 set xlabel "Frequenza: [???]"
 set ylabel "Ampiezza [???]"
