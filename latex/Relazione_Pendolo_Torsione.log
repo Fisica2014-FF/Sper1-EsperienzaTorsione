@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.13)  10 JUN 2014 19:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.4.13)  10 JUN 2014 19:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1947,17 +1947,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--53
 (../gnuplot/immagini/1.000greg.tex) [17] (../gnuplot/immagini/1.020dgdecad.tex)
 (../gnuplot/immagini/1.020greg.tex) [18] (../gnuplot/immagini/1.060dgdecad.tex)
 (../gnuplot/immagini/1.060greg.tex) [19] (../gnuplot/immagini/1.080dgdecad.tex)
-(../gnuplot/immagini/1.080greg.tex)
+(../gnuplot/immagini/1.080greg.tex) [20] (../gnuplot/immagini/frequenza.tex))
+Underfull \hbox (badness 10000) in paragraph at lines 41--56
 
-! LaTeX Error: File `../gnuplot/immagini/1.100dgdecad.tex' not found.
+ []
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: 100dgdecad.tex)
-
-Enter file name: 
-[20] (../gnuplot/immagini/1.100greg.tex) (../gnuplot/immagini/frequenza.tex))
-[21] [22] (./sezioni/analisi.tex) (./sezioni/conclusioni.tex)
-(./sezioni/codice.tex [23
+[21] (./sezioni/analisi.tex) (./sezioni/conclusioni.tex) (./sezioni/codice.tex
+[22
 
 ]
 Overfull \hbox (11.19258pt too wide) in paragraph at lines 590--590
@@ -1977,7 +1973,7 @@ Overfull \hbox (185.49106pt too wide) in paragraph at lines 590--590
 o al fatto che serve un periodo, cio^^Re il doppio della d[] 
  []
 
-[24]
+[23]
 Overfull \hbox (93.35437pt too wide) in paragraph at lines 590--590
 []\OT1/cmtt/m/n/10 %-----------------------------------------------------------
 --------------------------------------[] 
@@ -2001,7 +1997,7 @@ Overfull \hbox (38.49234pt too wide) in paragraph at lines 590--590
 at(i+1) ) //Trova i massimi[] 
  []
 
-[25] [26]
+[24] [25]
 Overfull \hbox (47.67976pt too wide) in paragraph at lines 590--590
 []\OT1/cmtt/m/n/10 da = ( ( max_neg.at(i) * max_dist.at(i)     * max_dist_pos.a
 t(i) * max_dist_pos.at(i) ) +[] 
@@ -2037,7 +2033,7 @@ Overfull \hbox (15.39255pt too wide) in paragraph at lines 590--590
 max_dist_pos.at(i) ) );[] 
  []
 
-[27]
+[26]
 Overfull \hbox (47.67976pt too wide) in paragraph at lines 590--590
 []\OT1/cmtt/m/n/10 da = ( ( min_neg.at(i) * min_dist.at(i)     * min_dist_pos.a
 t(i) * min_dist_pos.at(i) ) +[] 
@@ -2085,7 +2081,7 @@ Overfull \hbox (38.49234pt too wide) in paragraph at lines 590--590
 e eventuali massimi fasulli[] 
  []
 
-[28]
+[27]
 Overfull \hbox (48.99225pt too wide) in paragraph at lines 590--590
 []\OT1/cmtt/m/n/10 if (abs (xverticiMAX.at(i) - xverticiMAX.at(i+1)) < 0.8 ) //
 Intervallo considerato errore[] 
@@ -2103,7 +2099,7 @@ Overfull \hbox (1.74266pt too wide) in paragraph at lines 590--590
 efinitivo di massimi[] 
  []
 
-[29] [30]
+[28] [29]
 Overfull \hbox (93.35437pt too wide) in paragraph at lines 590--590
 []\OT1/cmtt/m/n/10 %-----------------------------------------------------------
 --------------------------------------[] 
@@ -2115,13 +2111,13 @@ Overfull \hbox (93.35437pt too wide) in paragraph at lines 590--590
 --------------------------------------[] 
  []
 
-[31] [32]
+[30] [31]
 Overfull \hbox (93.35437pt too wide) in paragraph at lines 590--590
 []\OT1/cmtt/m/n/10 %-----------------------------------------------------------
 --------------------------------------[] 
  []
 
-[33] [34]) [35] (./Relazione_Pendolo_Torsione.aux)
+[32] [33]) [34] (./Relazione_Pendolo_Torsione.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 41.12pt have occurred.
@@ -2131,10 +2127,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 31085 strings out of 493485
- 605383 string characters out of 3143526
- 1090192 words of memory out of 3000000
- 33557 multiletter control sequences out of 15000+200000
+ 30995 strings out of 493485
+ 603656 string characters out of 3143526
+ 1090457 words of memory out of 3000000
+ 33471 multiletter control sequences out of 15000+200000
  61969 words of font info for 264 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,14n,57p,495b,714s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2148,10 +2144,10 @@ public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 c8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Relazione_Pendolo_Torsione.pdf (35 pages, 451227 bytes).
+Output written on Relazione_Pendolo_Torsione.pdf (34 pages, 446861 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
+ 158 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  56333 words of extra memory for PDF output out of 61914 (max. 10000000)
 
