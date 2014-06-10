@@ -7,7 +7,7 @@ Per quanto riguarda l'offset, è stato rifatta la calibrazione prima di ogni pre
  calibrato da un'evidente simmetria rispetto all'asse delle ascisse.
 Per il calcolo dei massimi è stato utilizzato un programma che riconoscesse i punti di massimo e minimo approssimando
 la funzione come una parabola in un intorno dei dati ``stazionari`` (dati massimi e minimi locali) usando il dato precedente e il successivo,
-vincolando la parabola a passare per questi 3 punti e trovandone il vertice. L'errore di questa approssimazione è $o(x^3)$
+vincolando la parabola a passare per questi 3 punti e trovandone il vertice.
 
 Per una stima delle ampiezze legate alle frequenze di oscillazione sono stati presi i valori medi...
 
