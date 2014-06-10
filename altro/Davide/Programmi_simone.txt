@@ -1,0 +1,187 @@
+Media pesata
+
+
+#include <iostream>
+#include <cmath>
+#include <fstream>
+#include <cstdlib>
+#include <string>
+
+using namespace std;
+
+int main ()
+{
+    int n;
+    cout << "dire di quanti valor si vuole calcolare la media" << endl;
+    cin >> n;
+    double* misure = new double [n];
+    for (int i = 0 ; i < n ; i++)
+    {
+        cout << "inserire valore "<< i << " della media" << endl;
+        cin >> misure[i];
+    }
+
+    double* sigme = new double [n];
+    for (int i = 0 ; i < n ; i++)
+    {
+        cout << "inserire valore "<< i << " della sigma" << endl;
+        cin >> sigme[i];
+    }
+    
+    double sommavalsig;
+    for (int i = 0 ; i < n ; i++)
+    {
+        sommavalsig += (misure[i]/sigme[i]);
+    }
+    
+    double sommak;
+    for (int i = 0 ; i < n ; i++)
+    {
+        sommak += (1/sigme[i]);
+    }
+    
+    double mediapesata;
+    mediapesata = (1/sommak)*(sommavalsig);
+    
+    cout << " Media pesata: " << mediapesata << endl;
+    
+    double errormediapesata;
+    errormediapesata = sqrt(1/sommak);
+    
+    cout << " Error media pesata: " << errormediapesata << endl;
+    
+    return 0;
+}
+
+
+
+Calcolo Della Gamma
+
+#include <vector>
+#include <dirent.h>
+#include <iostream>
+#include <cmath>
+#include <fstream>
+#include <cstdlib>
+#include <string>
+
+using namespace std;
+
+
+#include <vector>
+using std::vector;
+
+class funzione_punti_lineare
+{
+public:
+	std::vector<double> vectx;
+	std::vector<double> vecty;
+    
+	//x dev'essere ordinato?
+	funzione_punti_lineare(std::vector<double> vx, std::vector<double> vy)
+    {
+		vectx = vx;
+		vecty = vy;
+	}
+    
+	long double operator()(double x)
+    {
+		long long i = 0;
+		while(vectx.at(i) < x)
+			i++;
+        
+		long double x0 = vectx.at(i);
+		long double y0 = vecty.at(i);
+        
+		long double x1 = vectx.at(i+1);
+		long double y1 = vecty.at(i+1);
+        
+		//Coeff. angolare, DeltaY/DeltaX
+		long double m = (y1 - y0) / (x1 - x0);
+		long double y = m*(x-x0)+y0;
+        
+		return y;
+	}
+};
+
+
+
+
+
+int main()
+{
+    
+    fstream fout ("Valori.txt" , fstream::out);
+    
+    int n = 0;
+    double x;
+    double y;
+	vector <double> valori_x;
+    vector <double> valori_y;					//Variabile temporanea contenente i valori
+	double temp_neg;					//Variabile temporanea ausiliaria 1
+	double temp_pos = 0;				//Variabile temporanea ausiliaria 2
+	while(cin >> x)					//Mette i dati nel vector
+	{
+        cin >> y;
+		valori_x.push_back(x);
+        valori_y.push_back(y);
+		n++;
+	}
+
+	int j = 0;
+	vector <double> zeri;		    //Crea vector in cui mettere zeri
+    double temp_dist;				//Crea variabile temporanea per la distanza dei valori
+	double temp_dist_neg;
+	double temp_dist_pos;
+    double temp_dist_no = 0;
+    double temp_dist_forse;
+    double temp_dist_si;
+
+    for (int i = 0 ; i < ( n - 1 ) ; i++)
+	{
+        if (valori_y.at(i) == 0)
+        {
+            temp_neg = abs((valori_x.at(i) + valori_x.at(i + 1))/2) ;
+			temp_dist = abs((temp_neg + temp_pos)/2);
+            temp_pos = temp_neg;
+            
+            
+            zeri.push_back(temp_dist);
+            i++;
+        }
+		else if (valori_y.at(i) * valori_y.at(i+1) < 0 )	//Trova gli zeri
+		{
+        
+            temp_neg = abs((valori_x.at(i) + valori_x.at(i + 1))/2) ;
+			temp_dist = abs((temp_neg + temp_pos)/2);
+            temp_pos = temp_neg;
+            
+            
+            zeri.push_back(temp_dist);
+        
+			            
+        
+            if (zeri.size() > 1  )
+            {
+                
+                
+                cout << temp_dist << endl;
+            }
+            
+            
+			j++;
+            
+            
+		}
+            
+	}
+    
+    funzione_punti_lineare f(valori_x,valori_y);
+    
+    for (double xzero : zeri)
+    {
+        fout << xzero << "\t" << f(xzero) << endl;
+    }
+    
+    return 0;
+}
