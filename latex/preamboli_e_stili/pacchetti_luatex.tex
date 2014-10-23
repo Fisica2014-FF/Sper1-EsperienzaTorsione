@@ -18,19 +18,21 @@
 
 \usepackage{lipsum} % Package to generate dummy text throughout this template
 
-%\usepackage[sc]{mathpazo} % Use the Palatino font
-\usepackage{inconsolata}
-\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
-%%%%%
-\usepackage{Alegreya} %% Option 'black' gives heavier bold face 
-\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Alegreya}
 
-\usepackage[euler-digits,euler-hat-accent]{eulervm}
+%\usepackage[sc]{mathpazo} % Use the Palatino font
+%\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+%%%%%
+%\usepackage{Alegreya} %% Option 'black' gives heavier bold face 
+%\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
+
+%\usepackage[euler-digits,euler-hat-accent]{eulervm}
 %%%%%%
-\usepackage[utf8]{inputenc} % Consente l'uso caratteri accentati italiani
-\linespread{1.03} % Line spacing - Palatino needs more space between lines
+%\usepackage[utf8]{inputenc} % Consente l'uso caratteri accentati italiani
+%\linespread{1.05} % Line spacing - Palatino needs more space between lines
 \usepackage{amsmath, amsthm, amssymb, amsfonts}
-\usepackage[kerning,spacing]{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Miei package
@@ -43,7 +45,7 @@
 \usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
 \usepackage{booktabs} % Horizontal rules in tables
 \usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
-%\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{hyperref} % For hyperlinks in the PDF
 
 \usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
 \usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them

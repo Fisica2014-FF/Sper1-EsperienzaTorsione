@@ -1,7 +1,12 @@
 \documentclass[10pt,a4paper]{article} % Prepara un documento con un font grande
 
-\input{./preamboli_e_stili/pacchetti.tex}
+\usepackage{iftex}
 
+\ifLuaTeX
+  \input{./preamboli_e_stili/pacchetti_luatex.tex}
+\else
+  \input{./preamboli_e_stili/pacchetti.tex}
+\fi
 \DeclareGraphicsExtensions{.pdf, .png, .jpg} % Se due immagini hanno lo stesso nome sceglile secondo l'ordine di filetype qui
 \graphicspath{ {./img/} }					 % Path delle immagini 
 
@@ -37,7 +42,7 @@
 \tableofcontents % prints Table of Contents
 \microtypesetup{protrusion=true} % enables protrusion
 
-%\begin{multicols}{2}
+\begin{multicols}{2}
 
 \section{Apparato strumentale}
 	\input{./sezioni/descrizione_app_strumentale.tex}
@@ -46,6 +51,7 @@
 	\input{./sezioni/metodologia_misura.tex}
 
 %\newpage
+\end{multicols}
 \section{Presentazione dei dati}			
 	\subsection{Tabelle}
 	%\begin{multicols}{2}
@@ -53,15 +59,17 @@
 	%\end{multicols}
 	\clearpage
 	\subsection{Grafici}
-	\input{./sezioni/pres_dati_grafici.tex}
+	%\input{./sezioni/pres_dati_grafici.tex}
 	
 \clearpage
+\begin{multicols}{2}
 \section{Analisi dei dati}
 	\input{./sezioni/analisi.tex}
 
 \section{Conclusioni}
 	\input{./sezioni/conclusioni.tex}
 	
+\end{multicols}
 \section{Codice}
 	\input{./sezioni/codice.tex}
 	
@@ -73,6 +81,6 @@
 % \label{fig:spazio1}
 %\end{figure}
 
-%\end{multicols}
+
 
 \end{document}
