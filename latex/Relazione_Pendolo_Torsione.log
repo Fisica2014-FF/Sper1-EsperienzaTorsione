@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.14)  25 OCT 2014 11:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.14)  25 OCT 2014 12:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1818,6 +1818,9 @@ LaTeX Font Info:    Font shape `T1/AnonymousPro/m/n' will be
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  28200 strings out of 493304
@@ -1848,7 +1851,7 @@ live/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/euler/eurm5.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/euler/eusm10.pfb>
-Output written on Relazione_Pendolo_Torsione.pdf (12 pages, 294733 bytes).
+Output written on Relazione_Pendolo_Torsione.pdf (12 pages, 295144 bytes).
 PDF statistics:
  120 PDF objects out of 1000 (max. 8388607)
  88 compressed objects within 1 object stream
