@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper]{article} % Prepara un documento con un font grande
+\documentclass[11pt,a4paper]{article} % Prepara un documento con un font grande
 
 \usepackage{iftex}
 
@@ -18,6 +18,8 @@
 %////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 % Fine dei dati iniziali per il latex: il documento finale inizierà da qui
 \begin{document}
+
+\lsstyle % Abilita il letterspacing personalizzato
 
 \maketitle % Produce il titolo a partire dai comandi \title, \author e \date
 
@@ -42,7 +44,7 @@
 \tableofcontents % prints Table of Contents
 \microtypesetup{protrusion=true} % enables protrusion
 
-\begin{multicols}{2}
+%\begin{multicols}{2}
 
 \section{Apparato strumentale}
 	\input{./sezioni/descrizione_app_strumentale.tex}
@@ -51,7 +53,7 @@
 	\input{./sezioni/metodologia_misura.tex}
 
 %\newpage
-\end{multicols}
+%\end{multicols}
 \section{Presentazione dei dati}			
 	\subsection{Tabelle}
 	%\begin{multicols}{2}
@@ -62,14 +64,14 @@
 	%\input{./sezioni/pres_dati_grafici.tex}
 	
 \clearpage
-\begin{multicols}{2}
+%\begin{multicols}{2}
 \section{Analisi dei dati}
 	\input{./sezioni/analisi.tex}
 
 \section{Conclusioni}
 	\input{./sezioni/conclusioni.tex}
 	
-\end{multicols}
+%\end{multicols}
 \section{Codice}
 	\input{./sezioni/codice.tex}
 	

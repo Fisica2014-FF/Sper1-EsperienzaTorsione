@@ -35,13 +35,11 @@
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 
 \usepackage[utf8]{inputenc} % Consente l'uso caratteri accentati italiani
-\linespread{1.11} % Line spacing - Palatino needs more space between lines
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
 \usepackage{amsmath, amsthm, amssymb, amsfonts}
 \usepackage[italian]{babel}
-\usepackage[kerning,spacing,tracking,letterspace = 3,babel]{microtype} % Slightly tweak font spacing for aesthetics. Il tre è pensato per Alegreya
+\usepackage[kerning,spacing,babel]{microtype} % Slightly tweak font spacing for aesthetics
 
-%\SetTracking[no ligatures = f]{encoding = *,shape = *}{300} % Aumenta la distanza fra le lettere
-							     % http://tex.stackexchange.com/questions/66494/new-command-for-spacing-letters-in-microtype
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Miei package
 
@@ -102,13 +100,13 @@
 \usepackage{titlesec} % Allows customization of titles
 \renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
 \renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
-\titleformat{\section}[block]{\LARGE}{\thesection.}{1em}{} % Change the look of the section titles Pezzi spostati \scshape\centering\bfseries
-\titleformat{\subsection}[block]{\normalsize}{\thesubsection.}{1em}{} % Change the look of the section titles
+\titleformat{\section}[block]{\large\scshape\bfseries\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
 
 \usepackage{fancyhdr} % Headers and footers
 \pagestyle{fancy} % All pages have headers and footers
 \fancyhead{} % Blank out the default header
 \fancyfoot{} % Blank out the default footer
-\fancyhead[C]{Frau, Chiappara, Forcher - \textit{Pendolo a Torsione} $\bullet$ \thesection} % Custom header text 
+\fancyhead[C]{Frau, Chiappara, Forcher - \textit{Pendolo a Torsione} $\bullet$ \thesection} % Custom header text
 \fancyfoot[RO,LE]{\thepage} % Custom footer text
 
