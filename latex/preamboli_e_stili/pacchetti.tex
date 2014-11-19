@@ -26,7 +26,8 @@
 
 %%%%%
 \usepackage{Alegreya} %% Option 'black' gives heavier bold face 
-\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
+\usepackage{AlegreyaSans} %% Option 'black' gives heavier bold face 
+%\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
 
 %\usepackage[euler-digits,euler-hat-accent]{eulervm}
 \usepackage[euler-hat-accent]{eulervm}
@@ -46,9 +47,15 @@
 %Miei package
 
 \usepackage{graphicx}		% Per le immagini
+\usepackage{tabulary}		% Tabelle migliorate che vanno a capo da sole...
 \usepackage{gnuplot-lua-tikz}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage[hmargin=0.18\paperwidth,% metti la larghezza del testo (margini orizzontali) al 18% del foglio
+	    hmarginratio=1:1,       % margini destro e sinistro uguali
+	    top=32mm,	            % margine sopra a 32mm...
+	    vmarginratio=1:1,       % quello sotto uguale (default 2:3)
+	    columnsep=20pt]         % Spazio tra le colonne?
+	    {geometry} % Document margins
 \usepackage{multicol} % Used for the two-column layout of the document
 \usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
 \usepackage{booktabs} % Horizontal rules in tables
@@ -102,8 +109,9 @@
 \usepackage{titlesec} % Allows customization of titles
 \renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
 \renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
-\titleformat{\section}[block]{\LARGE}{\thesection.}{1em}{} % Change the look of the section titles Pezzi spostati \scshape\centering\bfseries
-\titleformat{\subsection}[block]{\normalsize}{\thesubsection.}{1em}{} % Change the look of the section titles
+% \usefont {encoding} {family} {series} {shape}
+\titleformat{\section}[block]{\AlegreyaSansSC \bfseries \LARGE}{\thesection.}{1em}{} % Change the look of the section titles. Pezzi spostati \scshape\centering\bfseries
+\titleformat{\subsection}[block]{\AlegreyaSans \bfseries \Large}{\thesection.\thesubsection}{1em}{} % Change the look of the section titles
 
 \usepackage{fancyhdr} % Headers and footers
 \pagestyle{fancy} % All pages have headers and footers

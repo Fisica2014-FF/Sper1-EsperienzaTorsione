@@ -5,6 +5,6 @@
 \contentsline {section}{\numberline {III}Presentazione dei dati}{4}
 \contentsline {subsection}{\numberline {I}Tabelle}{4}
 \contentsline {subsection}{\numberline {II}Grafici}{7}
-\contentsline {section}{\numberline {IV}Analisi dei dati}{8}
-\contentsline {section}{\numberline {V}Conclusioni}{9}
-\contentsline {section}{\numberline {VI}Codice}{9}
+\contentsline {section}{\numberline {IV}Analisi dei dati}{24}
+\contentsline {section}{\numberline {V}Conclusioni}{25}
+\contentsline {section}{\numberline {VI}Codice}{25}
