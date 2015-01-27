@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.14)  18 NOV 2014 19:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.10.14)  9 DEC 2014 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./Relazione_Pendolo_Torsione.tex
+**Relazione_Pendolo_Torsione.tex
 (./Relazione_Pendolo_Torsione.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
@@ -31,6 +31,10 @@ and LuaTeX
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count87
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
@@ -144,9 +148,9 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 ))))
-(/usr/share/texlive/texmf-dist/tex/latex/alegreya/Alegreya.sty
-Package: Alegreya 2014/01/16 (Bob Tennent) Supports Alegreya and AlegreyaSC fon
-ts for all LaTeX engines. 
+(/usr/share/texlive/texmf-dist/tex/latex/alegreya/AlegreyaSans.sty
+Package: AlegreyaSans 2014/01/10 (Bob Tennent) Supports AlegreyaSans and Alegre
+yaSansSC fonts for all LaTeX engines. 
 
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
@@ -178,27 +182,22 @@ LaTeX Info: Redefining \mdseries on input line 29.
 LaTeX Info: Redefining \rmfamily on input line 36.
 LaTeX Info: Redefining \sffamily on input line 53.
 LaTeX Info: Redefining \ttfamily on input line 70.
-)
-LaTeX Font Info:    Try loading font information for OT1+Alegreya-LF on input l
-ine 241.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/opensans/opensans.sty
+Package: opensans 2011/11/11 Opensans
 
-(/usr/share/texlive/texmf-dist/tex/latex/alegreya/OT1Alegreya-LF.fd
-File: OT1Alegreya-LF.fd 2014/01/10 (autoinst) Font definitions for OT1/Alegreya
--LF.
-)
-LaTeX Font Info:    Font shape `OT1/Alegreya-LF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 241.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/alegreya/AlegreyaSans.sty
-Package: AlegreyaSans 2014/01/10 (Bob Tennent) Supports AlegreyaSans and Alegre
-yaSansSC fonts for all LaTeX engines. 
+(/usr/share/texlive/texmf-dist/tex/latex/slantsc/slantsc.sty
+Package: slantsc 2012/01/01 v2.11 Provide Slanted an Italic Small Caps
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-LaTeX Info: Redefining \textsu on input line 273.
-LaTeX Info: Redefining \textin on input line 274.
-)
+LaTeX Info: Redefining \upshape on input line 35.
+LaTeX Info: Redefining \slshape on input line 45.
+LaTeX Info: Redefining \itshape on input line 55.
+LaTeX Info: Redefining \scshape on input line 65.
+LaTeX Info: Redefining \noscshape on input line 82.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/eulervm/eulervm.sty
 Package: eulervm 2005/01/11 v4.0 (WaS)
 )
@@ -208,17 +207,7 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-)
-LaTeX Font Info:    Try loading font information for T1+Alegreya-LF on input li
-ne 100.
-
-(/usr/share/texlive/texmf-dist/tex/latex/alegreya/T1Alegreya-LF.fd
-File: T1Alegreya-LF.fd 2014/01/10 (autoinst) Font definitions for T1/Alegreya-L
-F.
-)
-LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 100.
-)
+))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks17
@@ -586,8 +575,8 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
@@ -656,6 +645,14 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 ))
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tabulary/tabulary.sty
 Package: tabulary 2008/12/01 v0.9 tabulary package (DPC)
@@ -747,6 +744,7 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
@@ -951,6 +949,12 @@ File: tikzlibrarybackgrounds.code.tex 2010/02/08 v2.10 (rcs-revision 1.2)
 \gpbasems=\dimen168
 \gpbaselw=\dimen169
 ))
+\alphabet=\skip52
+LaTeX Font Info:    Try loading font information for T1+pplx on input line 60.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pplx.fd
+File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -989,8 +993,8 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \page@free=\dimen180
 \premulticols=\dimen181
 \postmulticols=\dimen182
-\multicolsep=\skip52
-\multicolbaselineskip=\skip53
+\multicolsep=\skip53
+\multicolbaselineskip=\skip54
 \partial@page=\box40
 \last@line=\box41
 \mult@rightbox=\box42
@@ -1133,12 +1137,12 @@ Normal \dimen register pool exhausted, switching to extended pool.
 \l_tmpb_dim=\dimen259
 \g_tmpa_dim=\dimen260
 \g_tmpb_dim=\dimen261
-\c_zero_skip=\skip54
-\c_max_skip=\skip55
-\l_tmpa_skip=\skip56
-\l_tmpb_skip=\skip57
-\g_tmpa_skip=\skip58
-\g_tmpb_skip=\skip59
+\c_zero_skip=\skip55
+\c_max_skip=\skip56
+\l_tmpa_skip=\skip57
+\l_tmpb_skip=\skip58
+\g_tmpa_skip=\skip59
+\g_tmpb_skip=\skip60
 \c_zero_muskip=\muskip11
 \c_max_muskip=\muskip12
 \l_tmpa_muskip=\muskip13
@@ -1260,8 +1264,8 @@ Variant \prop_get:NVNTF already defined; not changing it on line 373
 \l__siunitx_unit_prefix_base_int=\count190
 \l__siunitx_unit_prefix_gram_int=\count191
 \l__siunitx_number_product_int=\count192
-\c__siunitx_one_fill_skip=\skip60
-\l__siunitx_table_unit_align_skip=\skip61
+\c__siunitx_one_fill_skip=\skip61
+\l__siunitx_table_unit_align_skip=\skip62
 \l__siunitx_table_exponent_dim=\dimen290
 \l__siunitx_table_integer_dim=\dimen291
 \l__siunitx_table_mantissa_dim=\dimen292
@@ -1275,8 +1279,8 @@ Variant \prop_get:NVNTF already defined; not changing it on line 373
 \l__siunitx_table_post_box=\box86
 \l__siunitx_table_mantissa_box=\box87
 \l__siunitx_table_result_box=\box88
-\l__siunitx_table_number_align_skip=\skip62
-\l__siunitx_table_text_align_skip=\skip63
+\l__siunitx_table_number_align_skip=\skip63
+\l__siunitx_table_text_align_skip=\skip64
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1437,19 +1441,19 @@ Loading lettrine.cfg
 (/usr/share/texlive/texmf-dist/tex/latex/lettrine/lettrine.cfg))
 (/usr/share/texlive/texmf-dist/tex/latex/paralist/paralist.sty
 Package: paralist 2013/06/09 v2.4 Extended list environments
-\pltopsep=\skip64
-\plpartopsep=\skip65
-\plitemsep=\skip66
-\plparsep=\skip67
+\pltopsep=\skip65
+\plpartopsep=\skip66
+\plitemsep=\skip67
+\plparsep=\skip68
 \pl@lab=\toks44
 )
 (/usr/share/texlive/texmf-dist/tex/latex/abstract/abstract.sty
 Package: abstract 2009/06/08 v1.2a configurable abstracts
-\abstitleskip=\skip68
-\absleftindent=\skip69
-\absrightindent=\skip70
-\absparindent=\skip71
-\absparsep=\skip72
+\abstitleskip=\skip69
+\absleftindent=\skip70
+\absrightindent=\skip71
+\absparindent=\skip72
+\absparsep=\skip73
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/listingsutf8.sty
 Package: listingsutf8 2011/11/10 v1.2 Allow UTF-8 in listings input (HO)
@@ -1498,8 +1502,8 @@ Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box93
-\beforetitleunit=\skip73
-\aftertitleunit=\skip74
+\beforetitleunit=\skip74
+\aftertitleunit=\skip75
 \ttl@plus=\dimen315
 \ttl@minus=\dimen316
 \ttl@toksa=\toks46
@@ -1511,19 +1515,19 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 File: block.tss 2011/12/15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip75
-\f@ncyO@elh=\skip76
-\f@ncyO@erh=\skip77
-\f@ncyO@olh=\skip78
-\f@ncyO@orh=\skip79
-\f@ncyO@elf=\skip80
-\f@ncyO@erf=\skip81
-\f@ncyO@olf=\skip82
-\f@ncyO@orf=\skip83
+\fancy@headwidth=\skip76
+\f@ncyO@elh=\skip77
+\f@ncyO@erh=\skip78
+\f@ncyO@olh=\skip79
+\f@ncyO@orh=\skip80
+\f@ncyO@elf=\skip81
+\f@ncyO@erf=\skip82
+\f@ncyO@olf=\skip83
+\f@ncyO@orf=\skip84
 )
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 116.
+less on input line 131.
 
 ) (./preamboli_e_stili/titolo_Pendolo_Torsione.tex)
 (./preamboli_e_stili/stili_float.tex
@@ -1531,7 +1535,8 @@ less on input line 116.
 \c@tabella=\count278
 \@float@every@grafico=\toks48
 \c@grafico=\count279
-) (./Relazione_Pendolo_Torsione.aux)
+)
+No file Relazione_Pendolo_Torsione.aux.
 \openout1 = `Relazione_Pendolo_Torsione.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -1548,7 +1553,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 20.
-
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -1564,18 +1568,16 @@ Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-Package microtype Info: Tracking enabled.
-Package microtype Info: Using default tracking set `smallcaps'.
+Package microtype Info: No adjustment of tracking.
 Package microtype Info: Adjustment of interword spacing enabled.
 Package microtype Info: Using default spacing set `basictext'.
 Package microtype Info: Adjustment of character kerning enabled.
 Package microtype Info: Using default kerning set `alltext'.
 Package microtype Info: Redefining babel's language switching commands.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `Alegreya-LF' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
+)
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count282
@@ -1615,16 +1617,16 @@ ABD: EveryShipout initializing macros
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * hratio: 1:1
-* vratio: 2:3
+* vratio: 1:1
 * modes: 
-* h-part:(L,W,R)=(107.54703pt, 382.41382pt, 107.54703pt)
-* v-part:(T,H,B)=(91.04881pt, 617.42482pt, 136.57321pt)
+* h-part:(L,W,R)=(123.71677pt, 350.07434pt, 123.71677pt)
+* v-part:(T,H,B)=(91.04881pt, 662.94922pt, 91.04881pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=382.41382pt
-* \textheight=617.42482pt
-* \oddsidemargin=35.27704pt
-* \evensidemargin=35.27704pt
+* \textwidth=350.07434pt
+* \textheight=662.94922pt
+* \oddsidemargin=51.44678pt
+* \evensidemargin=51.44678pt
 * \topmargin=-18.22118pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -1658,16 +1660,14 @@ File: siunitx-abbreviations.cfg 2013/07/31 v2.5s siunitx: Abbreviated units
 )
 \c@lstlisting=\count288
 \c__siunitx_mathsf_int=\count289
-Package microtype Info: Loading generic settings for font family
-(microtype)             `Alegreya-LF' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `OT1/Alegreya-LF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 20.
-LaTeX Font Info:    Font shape `OT1/Alegreya-LF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 20.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 20.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pplx.fd
+File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
+)
 LaTeX Font Info:    Try loading font information for U+zeur on input line 20.
- (/usr/share/texlive/texmf-dist/tex/latex/eulervm/uzeur.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eur.cfg
@@ -1686,6 +1686,17 @@ LaTeX Font Info:    Try loading font information for U+zeuex on input line 20.
 (/usr/share/texlive/texmf-dist/tex/latex/eulervm/uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 20.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `zplm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
@@ -1726,36 +1737,30 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `AnonymousPro' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 25.
-LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/n' will be
-(Font)              scaled to size 60.0pt on input line 25.
-LaTeX Font Info:    Try loading font information for T1+AlegreyaSC-TLF on input
- line 25.
 
-(/usr/share/texlive/texmf-dist/tex/latex/alegreya/T1AlegreyaSC-TLF.fd
-File: T1AlegreyaSC-TLF.fd 2014/01/10 (autoinst) Font definitions for T1/Alegrey
-aSC-TLF.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `AlegreyaSC-TLF' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 25.
-LaTeX Font Info:    Font shape `OT1/Alegreya-LF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 25.
+
+Package xcolor Warning: Incompatible color definition on input line 23.
+
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplx/m/sc/60'.
+(microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `OT1/AlegreyaSans-LF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 25.
+(Font)              scaled to size 12.0pt on input line 27.
+LaTeX Font Info:    Font shape `OT1/AlegreyaSans-LF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 27.
+LaTeX Font Info:    Font shape `OT1/AlegreyaSans-LF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 27.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplx/m/sc/12'.
+(microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Try loading font information for T1+AnonymousPro on input l
-ine 25.
-
+ine 27.
 (/usr/share/texlive/texmf-dist/tex/latex/anonymouspro/t1anonymouspro.fd
 File: t1anonymouspro.fd 2014/01/05 Fontinst v1.933 font definitions for T1/Anon
 ymousPro.
 )
 LaTeX Font Info:    Font shape `T1/AnonymousPro/m/n' will be
-(Font)              scaled to size 10.73094pt on input line 25.
+(Font)              scaled to size 10.73094pt on input line 27.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `AnonymousPro' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1765,23 +1770,15 @@ Package microtype Info: Loading generic settings for font family
 File: ./img/risonanza.jpg Graphic file (type jpg)
 
 <use ./img/risonanza.jpg>
-Package pdftex.def Info: ./img/risonanza.jpg used on input line 29.
-(pdftex.def)             Requested size: 305.93222pt x 209.494pt.
-LaTeX Font Info:    Font shape `T1/Alegreya-LF/bx/n' in size <10.95> not availa
-ble
-(Font)              Font shape `T1/Alegreya-LF/b/n' tried instead on input line
- 35.
-LaTeX Font Info:    Font shape `T1/Alegreya-LF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 35.
-LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 35.
-LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 35.
+Package pdftex.def Info: ./img/risonanza.jpg used on input line 31.
+(pdftex.def)             Requested size: 245.05096pt x 167.8004pt.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 37.
  (./sezioni/obiettivi.tex) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/risonanza.jpg>]
 LaTeX Font Info:    Try loading font information for T1+AlegreyaSansSC-LF on in
-put line 45.
+put line 46.
 
 (/usr/share/texlive/texmf-dist/tex/latex/alegreya/T1AlegreyaSansSC-LF.fd
 File: T1AlegreyaSansSC-LF.fd 2014/01/10 (autoinst) Font definitions for T1/Aleg
@@ -1794,21 +1791,17 @@ Package microtype Info: Loading generic settings for font family
 LaTeX Font Info:    Font shape `T1/AlegreyaSansSC-LF/bx/n' in size <10.95> not 
 available
 (Font)              Font shape `T1/AlegreyaSansSC-LF/b/n' tried instead on inpu
-t line 45.
+t line 46.
 LaTeX Font Info:    Font shape `T1/AlegreyaSansSC-LF/bx/n' in size <17.28> not 
 available
 (Font)              Font shape `T1/AlegreyaSansSC-LF/b/n' tried instead on inpu
-t line 45.
+t line 46.
 
-(./Relazione_Pendolo_Torsione.toc)
+No file Relazione_Pendolo_Torsione.toc.
 \tf@toc=\write4
 \openout4 = `Relazione_Pendolo_Torsione.toc'.
 
- (./sezioni/descrizione_app_strumentale.tex)
-(./sezioni/metodologia_misura.tex
-LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 8.
-
+(./sezioni/descrizione_app_strumentale.tex) (./sezioni/metodologia_misura.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1817,81 +1810,50 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2])
 LaTeX Font Info:    Try loading font information for T1+AlegreyaSans-LF on inpu
-t line 59.
+t line 60.
  (/usr/share/texlive/texmf-dist/tex/latex/alegreya/T1AlegreyaSans-LF.fd
 File: T1AlegreyaSans-LF.fd 2014/01/10 (autoinst) Font definitions for T1/Alegre
 yaSans-LF.
 )
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 59.
+(Font)              scaled to size 10.95pt on input line 60.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `AlegreyaSans-LF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 59.
+(Font)              scaled to size 10.95pt on input line 60.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 59.
+(Font)              scaled to size 14.4pt on input line 60.
 
 (./sezioni/pres_dati_tabelle.tex (./tabelle/puls_smorz_tab.tex)
-LaTeX Font Info:    Font shape `T1/Alegreya-LF/bx/n' in size <10> not available
-
-(Font)              Font shape `T1/Alegreya-LF/b/n' tried instead on input line
- 11.
-LaTeX Font Info:    Font shape `T1/Alegreya-LF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 11.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 11.
  [3]
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
 (./tabelle/ampiezez_regime_tab.tex) [4] (./tabelle/interpolanti_gamma_tab.tex)
-LaTeX Font Info:    Font shape `OT1/Alegreya-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 26.
-LaTeX Font Info:    Font shape `OT1/Alegreya-LF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 26.
-LaTeX Font Info:    Font shape `OT1/Alegreya-LF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 26.
 LaTeX Font Info:    Font shape `OT1/AlegreyaSans-LF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 26.
 LaTeX Font Info:    Font shape `OT1/AlegreyaSans-LF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 26.
-LaTeX Font Info:    Font shape `OT1/AlegreyaSans-LF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 26.
+(Font)              scaled to size 7.6pt on input line 26.
 
 [5])
-Underfull \hbox (badness 10000) in paragraph at lines 29--63
+Underfull \hbox (badness 10000) in paragraph at lines 29--64
 
  []
 
-[6] (./sezioni/pres_dati_grafici.tex (../gnuplot/immagini/0.900dgdecad.tex)
-(../gnuplot/immagini/0.900greg.tex) (../gnuplot/immagini/0.920dgdecad.tex)
-(../gnuplot/immagini/0.920greg.tex) [7
+[6] [7
 
-] (../gnuplot/immagini/0.940dgdecad.tex)
-(../gnuplot/immagini/0.940greg.tex) [8] (../gnuplot/immagini/0.960dgdecad.tex)
-(../gnuplot/immagini/0.960greg.tex) [9] (../gnuplot/immagini/0.965dgdecad.tex)
-(../gnuplot/immagini/0.965greg.tex) [10] (../gnuplot/immagini/0.966dgdecad.tex)
-(../gnuplot/immagini/0.966greg.tex) [11] (../gnuplot/immagini/0.967dgdecad.tex)
-(../gnuplot/immagini/0.967greg.tex) [12] (../gnuplot/immagini/0.968dgdecad.tex)
-(../gnuplot/immagini/0.968greg.tex) [13] (../gnuplot/immagini/0.969dgdecad.tex)
-(../gnuplot/immagini/0.969greg.tex) [14] (../gnuplot/immagini/0.970dgdecad.tex)
-(../gnuplot/immagini/0.970greg.tex) [15] (../gnuplot/immagini/0.975dgdecad.tex)
-(../gnuplot/immagini/0.975greg.tex) [16] (../gnuplot/immagini/0.980dgdecad.tex)
-(../gnuplot/immagini/0.980greg.tex) [17] (../gnuplot/immagini/1.000dgdecad.tex)
-(../gnuplot/immagini/1.000greg.tex) [18] (../gnuplot/immagini/1.020dgdecad.tex)
-(../gnuplot/immagini/1.020greg.tex) [19] (../gnuplot/immagini/1.060dgdecad.tex)
-(../gnuplot/immagini/1.060greg.tex) [20] (../gnuplot/immagini/1.080dgdecad.tex)
-(../gnuplot/immagini/1.080greg.tex) [21] (../gnuplot/immagini/frequenza.tex)
-[22])
-Underfull \hbox (badness 10000) in paragraph at lines 41--66
+] (./sezioni/analisi.tex [8
 
- []
+]
 
-[23] (./sezioni/analisi.tex [24
+LaTeX Warning: Reference `tab:pulssmorz' on page 9 undefined on input line 40.
 
-]) (./sezioni/conclusioni.tex)
-(./sezioni/codice.tex
+) (./sezioni/conclusioni.tex) (./sezioni/codice.tex
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
@@ -1901,64 +1863,63 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 )
-LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 1.
 LaTeX Font Info:    Font shape `T1/AnonymousPro/m/n' will be
 (Font)              scaled to size 8.81996pt on input line 1.
 
 (../src/approx_lineare.cpp
 LaTeX Font Info:    Font shape `T1/AnonymousPro/m/it' will be
 (Font)              scaled to size 8.81996pt on input line 1.
- [25]
+ [9]
 LaTeX Font Info:    Font shape `T1/AnonymousPro/bx/n' in size <9> not available
 
 (Font)              Font shape `T1/AnonymousPro/b/n' tried instead on input lin
 e 9.
 LaTeX Font Info:    Font shape `T1/AnonymousPro/b/n' will be
 (Font)              scaled to size 8.81996pt on input line 9.
-) (../src/massimi_minimi.cpp [26] [27] [28]
-[29] [30] [31] [32])) [33] (./Relazione_Pendolo_Torsione.aux)
+) (../src/massimi_minimi.cpp [10] [11] [12]
+[13] [14] [15] [16])) [17] (./Relazione_Pendolo_Torsione.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 35125 strings out of 493304
- 681553 string characters out of 6139870
- 1420193 words of memory out of 5000000
- 37433 multiletter control sequences out of 15000+600000
- 331061 words of font info for 379 fonts, out of 8000000 for 9000
+ 28777 strings out of 493304
+ 550254 string characters out of 6139870
+ 965502 words of memory out of 5000000
+ 31240 multiletter control sequences out of 15000+600000
+ 217256 words of font info for 341 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 65i,14n,100p,10464b,2024s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,14n,100p,10462b,1982s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/anonymouspro/AnonymousPro-03.e
 nc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/anonymouspro/AnonymousPro-01.
 enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/alegreya/algrs_rus6f4.enc}{/
-usr/share/texlive/texmf-dist/fonts/enc/dvips/alegreya/algr_72lo2s.enc}{/usr/sha
-re/texlive/texmf-dist/fonts/enc/dvips/alegreya/algr_sutw7e.enc}{/usr/share/texl
-ive/texmf-dist/fonts/enc/dvips/alegreya/algr_k3afeh.enc}</usr/share/texlive/tex
-mf-dist/fonts/type1/huerta/alegreya/Alegreya-Bold.pfb></usr/share/texlive/texmf
--dist/fonts/type1/huerta/alegreya/Alegreya-Italic.pfb></usr/share/texlive/texmf
--dist/fonts/type1/huerta/alegreya/Alegreya-Regular.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/huerta/alegreya/AlegreyaSC-Regular.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/huerta/alegreya/AlegreyaSans-Bold.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/huerta/alegreya/AlegreyaSansSC-Bold.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/anonymouspro/AnonymousPro-Bold.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/anonymouspro/AnonymousPro-Italic.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/anonymouspro/AnonymousPro-Regu
-lar.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb>
-Output written on Relazione_Pendolo_Torsione.pdf (33 pages, 605735 bytes).
+usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/te
+xmf-dist/fonts/type1/huerta/alegreya/AlegreyaSans-Bold.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/huerta/alegreya/AlegreyaSansSC-Bold.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/anonymouspro/AnonymousPro-Bold.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/anonymouspro/AnonymousPro-Italic.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/anonymouspro/AnonymousPro-Regul
+ar.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
+palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/upl
+ri8a.pfb>
+Output written on Relazione_Pendolo_Torsione.pdf (17 pages, 234837 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
+ 133 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 100370 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 81938 words of extra memory for PDF output out of 89155 (max. 10000000)
 

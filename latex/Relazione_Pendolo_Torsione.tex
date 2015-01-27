@@ -19,14 +19,16 @@
 % Fine dei dati iniziali per il latex: il documento finale inizierà da qui
 \begin{document}
 
-\lsstyle % Abilita il letterspacing personalizzato
-%\unclfamily % Cagata per il font Uncial xD
+{
+\color{grigio-molto-scuro}
+%\lsstyle % Abilita il letterspacing personalizzato
+%\unclfamily % Cagata per il font Uncial
 
 \maketitle % Produce il titolo a partire dai comandi \title, \author e \date
 
 \vspace{ \stretch{1} }
 \begin{center}
-	\includegraphics[width=0.8\textwidth]{risonanza}
+	\includegraphics[width=0.7\textwidth]{risonanza}
 \end{center}
 
 \vspace{ \stretch{1} }
@@ -38,7 +40,6 @@
 \end{abstract}
 
 \newpage
-
 
 
 \microtypesetup{protrusion=false} % disables protrusion locally in the document
@@ -72,8 +73,10 @@
 \section{Conclusioni}
 	\input{./sezioni/conclusioni.tex}
 	
-%\end{multicols}
+	%\end{multicols}
 \section{Codice}
+} 	%Fine del grigio e di lsstyle
+
 	\input{./sezioni/codice.tex}
 	
 %\subsection{Esempio immagini}

@@ -18,17 +18,17 @@
 
 \usepackage{lipsum} % Package to generate dummy text throughout this template
 
-\usepackage[sc]{mathpazo} % Use the Palatino font
+%\usepackage[sc]{mathpazo} % Use the Palatino font
 %\usepackage{tgpagella} % TeX Gyre Pagella, versione migliorata di Palatino. Si ma bo, no
 %\usepackage{inconsolata}
 \usepackage{textcomp}
 \usepackage[scale=0.98,ttdefault]{AnonymousPro}
 
 %%%%%
-%\usepackage{Alegreya} %% Option 'black' gives heavier bold face 
+\usepackage{Alegreya} %% Option 'black' gives heavier bold face 
 \usepackage{AlegreyaSans} %% Option 'black' gives heavier bold face 
 %\renewcommand*\oldstylenums[1]{{\AlegreyaOsF #1}}
-\usepackage{opensans}
+
 %\usepackage[euler-digits,euler-hat-accent]{eulervm}
 \usepackage[euler-hat-accent]{eulervm}
 %%%%%%
@@ -36,31 +36,25 @@
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 
 \usepackage[utf8]{inputenc} % Consente l'uso caratteri accentati italiani
-\linespread{1.08} % Line spacing - Palatino needs more space between lines, messo a 1.05 da 1.11 che era per alegreya
+\linespread{1.11} % Line spacing - Palatino needs more space between lines
 \usepackage{amsmath, amsthm, amssymb, amsfonts}
 \usepackage[italian]{babel}
-%\usepackage[kerning,spacing,tracking,letterspace = 2,babel]{microtype} % Slightly tweak font spacing for aesthetics. Il tre è pensato per Alegreya
-\usepackage[kerning,spacing,babel]{microtype}
-%\SetTracking[]{encoding = *,shape = *}{3} % Aumenta la distanza fra le lettere
+\usepackage[kerning,spacing,tracking,letterspace = 3,babel]{microtype} % Slightly tweak font spacing for aesthetics. Il tre è pensato per Alegreya
+
+%\SetTracking[no ligatures = f]{encoding = *,shape = *}{300} % Aumenta la distanza fra le lettere
 							     % http://tex.stackexchange.com/questions/66494/new-command-for-spacing-letters-in-microtype
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Miei package
-
-
 
 \usepackage{graphicx}		% Per le immagini
 \usepackage{color}		% COLORI!
 
 \definecolor{grigio-molto-scuro}{gray}{0.1}	%colore
 
-\usepackage{tabulary}		% Tabelle migliorate, nelle celle il testo va a capo da solo...
+\usepackage{tabulary}		% Tabelle migliorate che vanno a capo da sole...
 \usepackage{gnuplot-lua-tikz}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newlength{\alphabet}
-\settowidth{\alphabet}{\normalfont abcdefghijklmnopqrstuvwxyz}
-\usepackage[
-	    %hmargin=0.18\paperwidth,% metti la larghezza del testo (margini orizzontali) al 18% del foglio
-	    textwidth=2.4\alphabet,  % http://tex.stackexchange.com/questions/59626/nicely-force-66-characters-per-line
+\usepackage[hmargin=0.18\paperwidth,% metti la larghezza del testo (margini orizzontali) al 18% del foglio
 	    hmarginratio=1:1,       % margini destro e sinistro uguali
 	    top=32mm,	            % margine sopra a 32mm...
 	    vmarginratio=1:1,       % quello sotto uguale (default 2:3)
@@ -121,12 +115,12 @@
 \renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
 % \usefont {encoding} {family} {series} {shape}
 \titleformat{\section}[block]{\AlegreyaSansSC \bfseries \LARGE}{\thesection.}{1em}{} % Change the look of the section titles. Pezzi spostati \scshape\centering\bfseries
-\titleformat{\subsection}[block]{\AlegreyaSans \bfseries \Large}{\thesection.\thesubsection }{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\AlegreyaSans \bfseries \Large}{\thesection.\thesubsection}{1em}{} % Change the look of the section titles
 
 \usepackage{fancyhdr} % Headers and footers
 \pagestyle{fancy} % All pages have headers and footers
 \fancyhead{} % Blank out the default header
 \fancyfoot{} % Blank out the default footer
-\fancyhead[C]{Frau, Chiappara, Forcher - \textit{Pendolo a Torsione} $\bullet$ \thesection} % Custom header text. \nouppercase{\leftmark} per sezione, ma non ci sta
+\fancyhead[C]{Frau, Chiappara, Forcher - \textit{Pendolo a Torsione} $\bullet$ \thesection} % Custom header text 
 \fancyfoot[RO,LE]{\thepage} % Custom footer text
 
